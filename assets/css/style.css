@@ -57,6 +57,24 @@ body {
   overflow-y: hidden;
   position: relative;
 }
+
+.btn-itssi {
+  border: 2px solid var(--black);
+  width: fit-content;
+  padding: 6px 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: auto;
+  margin-top: 12px;
+  margin-right: 16px;
+  transition: all  ecubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn-itssi:hover{
+   background-color: var(--black);
+   color: var(--nav-color);
+   
+}
 /* ==========================================================================
    5.0 - Header
    ========================================================================== */
@@ -114,8 +132,21 @@ footer.site-footer {
   transform: translateX(-50%);
 }
 /* ==========================================================================
-  7.0 - HOME
+  7.0 - main
    ========================================================================== */
+   main.site-main{
+padding-top: 140px;
+   }
+main.site-main .container .row .col-md-10 form input,
+main.site-main .container .row .col-md-10 form select,
+main.site-main .container .row .col-md-10 form textarea {
+  padding: 12px 18px;
+  border-radius: 18px;
+}
+main.site-main .container .row .col-md-10 form label {
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
 
 /* ==========================================================================
   -1 - Responsive
