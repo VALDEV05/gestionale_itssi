@@ -20,30 +20,99 @@
 /* ==========================================================================
    1.0  Variables
    ========================================================================== */
-
+:root {
+  --bg-color: #f7f7f7;
+  --nav-color: #e4e4e0;
+  --black: #121212;
+}
 /* ==========================================================================
   2.0 - Reset
    ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* ==========================================================================
   3.0 - Fonts
    ========================================================================== */
+@font-face {
+  font-family: "helvetica";
+  src: local("helvetica"), url("../fonts/helvetica.woff2") format("woff2");
+}
 /* ==========================================================================
   4.0 - Globals
    ========================================================================== */
+body * {
+  font-family: "Helvetica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: var(--black);
+  font-weight: 500;
+}
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+}
 /* ==========================================================================
    5.0 - Header
    ========================================================================== */
-header.site-header .container {
-  background-color: #aeaeae;
-  border-radius: 44px;
+header.site-header nav {
+  background-color: var(--nav-color);
+  min-height: 40px;
+  padding: 8px 24px;
+  border-radius: 24px;
+  margin: 12px auto;
+  width: 95vw !important;
+  max-width: 95vw !important;
 }
-header.site-header .container .row .col-md-12 {
+header.site-header nav.container .row {
+  align-items: center;
+}
+
+header.site-header nav.container .row .col-md-4 .nav-logo {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
+header.site-header nav.container .row .col-md-4 .nav-logo svg {
+  transform: scale(0.75);
+}
+header.site-header nav.container .row .col-md-4 .nav-menu {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+header.site-header nav.container .row .col-md-4 .nav-menu .menu-item {
+  padding: 0 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.site-header nav.container .row .col-md-4 .nav-menu .menu-item a {
+  color: var(--black);
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: unset;
+  font-size: 14px;
+}
+header.site-header nav.container .row .col-md-4 .nav-menu.nav-menu-right {
+  justify-content: flex-end;
+}
+
 /* ==========================================================================
   6.0 - Footer
    ========================================================================== */
+footer.site-footer {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* ==========================================================================
   7.0 - HOME
    ========================================================================== */
