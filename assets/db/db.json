@@ -1,3 +1,24 @@
 {
-  "utenti": []
+  "utenti": [
+    {
+      "id": "34fc",
+      "nome": "Valerio",
+      "cognome": "Corda",
+      "email": "info@valeriocorda.it",
+      "telefono": "3518576702",
+      "dataNascita": "2025-06-05",
+      "corso": "html",
+      "note": "askjhajk haskhaskjn ashjakshkja askdnsajkd"
+    },
+    {
+      "id": "1acc",
+      "nome": "valerio",
+      "cognome": "Corda",
+      "email": "info@valeriocorda.it",
+      "telefono": "2318217361",
+      "dataNascita": "2025-06-19",
+      "corso": "html",
+      "note": "as a asa"
+    }
+  ]
 }
