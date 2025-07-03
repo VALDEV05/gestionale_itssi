@@ -53,7 +53,7 @@ function validaDati(dati) {
 function inviaDatiAlServer(dati) {
   console.log("Invio dei dati al server in corso...");
 
-  fetch('http://localhost:5500/utenti', {
+  fetch('http://localhost:5502/utenti', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
