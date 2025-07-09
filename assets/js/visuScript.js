@@ -1,4 +1,4 @@
- fetch('http://localhost:5502/utenti')
+ fetch('http://localhost:3000/utenti')
       .then(response => {
         if (!response.ok) {
           throw new Error('Errore nel recupero dei dati');
@@ -9,6 +9,7 @@
         const tbody = document.querySelector("#studentiTable tbody");
 
         studenti.forEach(studente => {
+          
           const row = document.createElement("tr");
           row.className = studente.corso?.toLowerCase() || '';
 

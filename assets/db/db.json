@@ -49,6 +49,26 @@
       "dataNascita": "2025-06-13",
       "corso": "cucina",
       "note": "asda asdh asd adaas"
+    },
+    {
+      "id": "f1db",
+      "nome": "Valerio",
+      "cognome": "Corda",
+      "email": "info@valewria.com",
+      "telefono": "1737488193",
+      "dataNascita": "2025-07-01",
+      "corso": "cucina",
+      "note": "prova prova"
+    },
+    {
+      "id": "fbc9",
+      "nome": "Valerio",
+      "cognome": "Corda",
+      "email": "info@valeriocorda.it",
+      "telefono": "1212323232",
+      "dataNascita": "2025-07-07",
+      "corso": "java",
+      "note": "gvghv j gjfgj"
     }
   ]
 }

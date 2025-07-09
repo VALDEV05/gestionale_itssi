@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2rem;
+      }
+      form {
+        max-width: 300px;
+      }
+      input {
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.5rem;
+      }
+      .errore {
+        color: red;
+      }
+      .successo {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Accedi</button>
+    </form>
+
+    <p id="messaggio"></p>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("email").value.trim();
+          const password = document.getElementById("password").value.trim();
+          const messaggio = document.getElementById("messaggio");
+
+          fetch("/assets/db/login.json")
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Impossibile caricare gli utenti");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              const utente = data.utenti.find(
+                (u) => u.email === email && u.password === password
+              );
+
+              if (utente) {
+                /*  messaggio.textContent = `Benvenuto, ${utente.email}`;
+            messaggio.className = 'successo';
+ */
+                localStorage.setItem("utente", JSON.stringify(utente));
+                messaggio.textContent = `Benvenuto, ${utente.email}`;
+                messaggio.className = "successo";
+                // Esempio: reindirizza a dashboard.html dopo 1 secondo
+                setTimeout(() => {
+                  window.location.href = "francesco.html";
+                }, 1000);
+              } else {
+                messaggio.textContent = "Email o password errati";
+                messaggio.className = "errore";
+              }
+            })
+            .catch((err) => {
+              messaggio.textContent = err.message;
+              messaggio.className = "errore";
+            });
+        });
+    </script>
+  </body>
+</html>
