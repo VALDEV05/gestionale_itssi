@@ -28,6 +28,31 @@ app.get('/utenti', (req, res) => {
   });
 });
 
+//utente singolo
+app.get('/utente/:id', (req, res) => {
+  const filePath = path.join(__dirname, 'assets/db/db.json');
+  const userId = req.params.id;
+
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      return res.status(500).json({ errore: 'Impossibile leggere il file' });
+    }
+
+    try {
+      const json = JSON.parse(data);
+      const utente = json.utenti.find(u => u.id === userId);
+
+      if (utente) {
+        res.json(utente);
+      } else {
+        res.status(404).json({ errore: 'Utente non trovato' });
+      }
+    } catch (e) {
+      res.status(500).json({ errore: 'Errore nella lettura del JSON' });
+    }
+  });
+});
+
 app.listen(3000, () => {
   console.log('Server attivo su http://localhost:3000');
 });

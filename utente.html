@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Dati utente</title>
+</head>
+<body>
+  <h1>Dati utente</h1>
+  <div id="infoUtente"></div>
+
+  <script>
+    // 1️⃣ Ottieni l'ID utente dalla query string: ?id=34fc
+    const params = new URLSearchParams(window.location.search);
+    const idUtente = params.get('id');
+
+    if (!idUtente) {
+      document.getElementById('infoUtente').textContent = 'ID utente non fornito.';
+    } else {
+      // 2️⃣ Richiama l'API per un singolo utente
+      fetch(`/utente/${idUtente}`)
+        .then(res => {
+          if (!res.ok) throw new Error('Utente non trovato');
+          return res.json();
+        })
+        .then(utente => {
+          // 3️⃣ Mostra i dati in pagina
+          document.getElementById('infoUtente').innerHTML = `
+            <ul>
+              <li><strong>Nome:</strong> ${utente.nome}</li>
+              <li><strong>Cognome:</strong> ${utente.cognome}</li>
+              <li><strong>Email:</strong> ${utente.email}</li>
+              <li><strong>Telefono:</strong> ${utente.telefono}</li>
+              <li><strong>Corso:</strong> ${utente.corso}</li>
+            </ul>
+          `;
+        })
+        .catch(err => {
+          document.getElementById('infoUtente').textContent = err.message;
+        });
+    }
+  </script>
+</body>
+</html>
