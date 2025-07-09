@@ -11,7 +11,7 @@
 **  5.0 - Header
 **  6.0 - Footer
 **  7.0 - HOME
-**  8.0 - ABOUT
+**  8.0 - Login
 **  -1 - Responsive Responsive
 **
 ****
@@ -36,15 +36,17 @@
 /* ==========================================================================
   3.0 - Fonts
    ========================================================================== */
-@font-face {
+/* @font-face {
   font-family: "helvetica";
   src: local("helvetica"), url("../fonts/helvetica.woff2") format("woff2");
-}
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* ==========================================================================
   4.0 - Globals
    ========================================================================== */
 body * {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   color: var(--black);
@@ -67,13 +69,12 @@ body {
   margin-left: auto;
   margin-top: 12px;
   margin-right: 16px;
-  transition: all  ecubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all ecubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.btn-itssi:hover{
-   background-color: var(--black);
-   color: var(--nav-color);
-   
+.btn-itssi:hover {
+  background-color: var(--black);
+  color: var(--nav-color);
 }
 /* ==========================================================================
    5.0 - Header
@@ -134,9 +135,9 @@ footer.site-footer {
 /* ==========================================================================
   7.0 - main
    ========================================================================== */
-   main.site-main{
-    padding-top: 140px;
-   }
+main.site-main {
+  padding-top: 140px;
+}
 main.site-main .container .row .col-md-10 form input,
 main.site-main .container .row .col-md-10 form select,
 main.site-main .container .row .col-md-10 form textarea {
@@ -146,6 +147,53 @@ main.site-main .container .row .col-md-10 form textarea {
 main.site-main .container .row .col-md-10 form label {
   padding-left: 18px;
   margin-bottom: 6px;
+}
+/* ==========================================================================
+  8.0 - login
+   ========================================================================== */
+
+/* Qui aggiungeremo il css relativo alla pagina login.html */
+
+main.site-main.panel_login .container-form {
+  max-width: 400px;
+  height: auto;
+  background: #c9c9c9;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 201, 201, 1) 0%,
+    rgba(196, 196, 196, 0.1) 90%
+  );
+  height: 400px;
+  border: 1px solid #bbb;
+  padding: 24px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main.site-main.panel_login .container-form .container-form_header h1 {
+  font-size: 24px;
+}
+main.site-main.panel_login .container-form .container-form_header h4 {
+  font-weight: 300;
+}
+
+main.site-main.panel_login .container-form .container-form_body form .row .col {
+  display: flex;
+  flex-direction: column;
+}
+
+main.site-main.panel_login
+  .container-form
+  .container-form_body
+  form
+  .row
+  .col
+  .forgot-psw-text {
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: auto;
+  opacity: 0.75;
 }
 
 /* ==========================================================================

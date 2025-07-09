@@ -1,83 +1,106 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Login</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        margin: 2rem;
-      }
-      form {
-        max-width: 300px;
-      }
-      input {
-        display: block;
-        margin-bottom: 1rem;
-        width: 100%;
-        padding: 0.5rem;
-      }
-      .errore {
-        color: red;
-      }
-      .successo {
-        color: green;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <title>Login | Gestionale ITSSIxellence</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
-    <h1>Login</h1>
-    <form id="loginForm">
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Password" required />
-      <button type="submit">Accedi</button>
-    </form>
+  <body class="loginPanel">
+    <header class="site-header">
+      <nav class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="nav-logo">
+              <svg
+                width="47"
+                height="43"
+                viewBox="0 0 47 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30 0H45C45.2 7.05 45.67 13.64 40.85 19.35C39.42 21.05 34.73 23.35 35.09 25.36L47 43.01H31.5C30.05 43.01 22.34 28.01 21.44 27.95C13.38 27.34 15.9 43.01 15 43.01H1C-0.03 32.23 1.34 22.38 11.99 17.51L0 0H16.5C17.76 0 23.64 12.61 25.62 12.95C31.68 11.07 29.83 4.93 30 0Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </nav>
+    </header>
+    <!-- /.site-header -->
+    <main class="site-main panel_login">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <div class="container container-form">
+              <div class="container-form_header">
+                <h1>Login</h1>
+                <h4>Welcome onboard with us!</h4>
+              </div>
+              <!-- /.container-form_header -->
+              <div class="container-form_body">
+                <form id="loginForm">
+                  <div class="row">
+                    <div class="col">
+                      <label class="form-label" for="username" class="form-label">Username</label>
+                      <input
+                      class="form-control"
+                        type="text"
+                        id="username"
+                        placeholder="Enter Username"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col">
+                      <label class="form-label" for="password" class="form-label">Password</label>
+                      <input
+                      class="form-control"
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                      />
+                      <a href="#" class="forgot-psw-text">Forgot password?</a>
+                    </div>
+                  </div>
 
-    <p id="messaggio"></p>
-
-    <script>
-      document
-        .getElementById("loginForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const email = document.getElementById("email").value.trim();
-          const password = document.getElementById("password").value.trim();
-          const messaggio = document.getElementById("messaggio");
-
-          fetch("/assets/db/login.json")
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error("Impossibile caricare gli utenti");
-              }
-              return response.json();
-            })
-            .then((data) => {
-              const utente = data.utenti.find(
-                (u) => u.email === email && u.password === password
-              );
-
-              if (utente) {
-                /*  messaggio.textContent = `Benvenuto, ${utente.email}`;
-            messaggio.className = 'successo';
- */
-                localStorage.setItem("utente", JSON.stringify(utente));
-                messaggio.textContent = `Benvenuto, ${utente.email}`;
-                messaggio.className = "successo";
-                // Esempio: reindirizza a dashboard.html dopo 1 secondo
-                setTimeout(() => {
-                  window.location.href = "nuovoUtente.html";
-                }, 1000);
-              } else {
-                messaggio.textContent = "Email o password errati";
-                messaggio.className = "errore";
-              }
-            })
-            .catch((err) => {
-              messaggio.textContent = err.message;
-              messaggio.className = "errore";
-            });
-        });
-    </script>
+                  <div class="row mt-3">
+                    <button type="submit" class="btn btn-itssi">Invia</button>
+                  </div>
+                  <p>New to Logo? Register <a href="" class="fw-bold">Here</a></p>
+                </form>
+              </div>
+              <!-- /.container-form_body -->
+            </div>
+            <!-- /.container container-form -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /.site-main -->
+    <footer class="site-footer">
+      Copyright ITSSIxellence © All rights reserved. design with &hearts; by
+      <a href="https://valeriocorda.it">valeriocorda.it</a>
+    </footer>
+    <!-- /.site-footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/login.js"></script>
   </body>
 </html>
