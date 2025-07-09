@@ -14,7 +14,7 @@
           row.className = studente.corso?.toLowerCase() || '';
 
           row.innerHTML = `
-            <td>${studente.id}</td>
+            <td><a href="http://localhost:3000/utente/${studente.id}" target="_blank">${studente.id}</a></td>
             <td>${studente.nome}</td>
             <td>${studente.cognome}</td>
             <td>${studente.email}</td>

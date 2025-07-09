@@ -50,28 +50,42 @@ function validaDati(dati) {
   return valido;
 }
 
-function inviaDatiAlServer(dati) {
+async function inviaDatiAlServer(dati) {
   console.log("Invio dei dati al server in corso...");
 
-  fetch('http://localhost:3000/utenti', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(dati)
-  })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error("Errore nella risposta del server");
+  try {
+    const res = await fetch('http://localhost:3000/utenti');
+    if (!res.ok) throw new Error("Impossibile leggere gli utenti esistenti");
+    const utenti = await res.json();
+
+    let id;
+    const esisteID = (id) => utenti.some(u => u.id === id);
+
+    // Genera un ID unico
+    do {
+      id = Math.random().toString(36).substring(2, 6);
+    } while (esisteID(id));
+
+    dati.id = id;
+
+    const postResponse = await fetch('http://localhost:3000/utenti', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(dati)
+    });
+
+    if (!postResponse.ok) {
+      const errorText = await postResponse.text();
+      throw new Error("Errore HTTP " + postResponse.status + ": " + errorText);
     }
-    return response.json();
-  })
-  .then(data => {
+
+    const data = await postResponse.json();
     console.log("Risposta del server (JSON Server):", data);
     alert("Dati inviati con successo al server locale!");
-  })
-  .catch(error => {
-    console.error("Errore durante l'invio:", error);
-    alert("Errore durante l'invio dei dati.");
-  });
+  } catch (error) {
+    console.error("Errore durante l'invio:", error.message);
+    alert("Errore durante l'invio dei dati: " + error.message);
+  }
 }

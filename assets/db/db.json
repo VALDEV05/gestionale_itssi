@@ -69,6 +69,16 @@
       "dataNascita": "2025-07-07",
       "corso": "java",
       "note": "gvghv j gjfgj"
+    },
+    {
+      "nome": "valerio",
+      "cognome": "corda",
+      "email": "info@valeriocorda.it",
+      "telefono": "1231312232",
+      "dataNascita": "2025-07-12",
+      "corso": "java",
+      "note": "",
+      "id": "vd8g"
     }
   ]
 }

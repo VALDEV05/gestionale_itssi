@@ -9,15 +9,16 @@
   <div id="infoUtente"></div>
 
   <script>
-    // 1️⃣ Ottieni l'ID utente dalla query string: ?id=34fc
-    const params = new URLSearchParams(window.location.search);
-    const idUtente = params.get('id');
+    // 1️⃣ Ottieni l'ID utente dal pathname: /utente/id
+    const path = window.location.pathname;
+    const idUtente = path.split("/").pop();
+    
 
     if (!idUtente) {
       document.getElementById('infoUtente').textContent = 'ID utente non fornito.';
     } else {
       // 2️⃣ Richiama l'API per un singolo utente
-      fetch(`/utente/${idUtente}`)
+      fetch(`/api/utente/${idUtente}`)
         .then(res => {
           if (!res.ok) throw new Error('Utente non trovato');
           return res.json();
