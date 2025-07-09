@@ -1,11 +1,11 @@
 {
   "utenti": [
     {
-      "email": "admin@example.it",
+      "username": "admin@example.it",
       "password": "1234"
     },
     {
-      "email": "valerio@esempio.it",
+      "username": "valerio@esempio.it",
       "password": "abcd"
     }
   ]

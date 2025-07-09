@@ -21,7 +21,7 @@
    1.0  Variables
    ========================================================================== */
 :root {
-  --bg-color: #f7f7f7;
+  --bg-color: #f7f7f2;
   --nav-color: #e4e4e0;
   --black: #121212;
 }
@@ -54,27 +54,28 @@ body * {
 }
 body {
   background-color: var(--bg-color);
-  height: 100vh;
-  max-height: 100vh;
   overflow-y: hidden;
   position: relative;
 }
 
 .btn-itssi {
-  border: 2px solid var(--black);
+  border: 2px solid white;
   width: fit-content;
+  color: white;
   padding: 6px 24px;
   text-transform: uppercase;
   font-weight: 600;
   margin-left: auto;
   margin-top: 12px;
   margin-right: 16px;
-  transition: all ecubic-bezier(0.075, 0.82, 0.165, 1);
+  background-image: linear-gradient(102deg, #43c5e4 1%, #454495 70%, #36418d 83%, #043673 101%);
+  transition: all ease-in-out .7s;
 }
-
-.btn-itssi:hover {
-  background-color: var(--black);
-  color: var(--nav-color);
+.btn-itssi:hover{
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 32px;
 }
 /* ==========================================================================
    5.0 - Header
@@ -87,6 +88,10 @@ header.site-header nav {
   margin: 12px auto;
   width: 95vw !important;
   max-width: 95vw !important;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 24px;
 }
 header.site-header nav.container .row {
   align-items: center;
@@ -127,10 +132,10 @@ header.site-header nav.container .row .col-md-4 .nav-menu.nav-menu-right {
   6.0 - Footer
    ========================================================================== */
 footer.site-footer {
-  position: absolute;
-  bottom: 32px;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
+  bottom: 32px;
 }
 /* ==========================================================================
   7.0 - main
@@ -153,7 +158,15 @@ main.site-main .container .row .col-md-10 form label {
    ========================================================================== */
 
 /* Qui aggiungeremo il css relativo alla pagina login.html */
+main.site-main.panel_login .alert{
+  max-width: 400px;
+  margin: 0 auto;
+  height: 60px;
+}
 
+main.site-main.panel_login .container .row .col-md-10.mx-auto{
+  margin-top: 24px;
+}
 main.site-main.panel_login .container-form {
   max-width: 400px;
   height: auto;
