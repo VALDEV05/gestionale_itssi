@@ -11,6 +11,7 @@ document.getElementById('datiUtenteForm').addEventListener('submit', function (e
 });
 
 function prendiDatiDalForm() {
+  const now = new Date();
   const dati = {
     nome: document.getElementById('nome').value.trim(),
     cognome: document.getElementById('cognome').value.trim(),
@@ -18,8 +19,25 @@ function prendiDatiDalForm() {
     telefono: document.getElementById('telefono').value.trim(),
     dataNascita: document.getElementById('dataNascita').value,
     corso: document.getElementById('corso').value,
-    note: document.getElementById('note').value.trim()
+    codiceFiscale: document.getElementById('codiceFiscale').value,
+    note: document.getElementById('note').value.trim(),
+    timeStamp: now.toISOString()
   };
+
+  const opzioni = {
+    timeZone: 'Europe/Rome',
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  };
+  const formatoLocale = new Intl.DateTimeFormat('it-IT', opzioni).formatToParts(now);
+  const parti = Object.fromEntries(formatoLocale.map(({ type, value }) => [type, value]));
+
+  dati.timestampLocale = `${parti.day}-${parti.month}-${parti.year}_${parti.hour}-${parti.minute}`;
+
   console.log("Dati raccolti:", dati);
   return dati;
 }

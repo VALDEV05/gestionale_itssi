@@ -1,84 +1,41 @@
 {
   "utenti": [
     {
-      "id": "34fc",
       "nome": "Valerio",
       "cognome": "Corda",
       "email": "info@valeriocorda.it",
       "telefono": "3518576702",
-      "dataNascita": "2025-06-05",
-      "corso": "html",
-      "note": "askjhajk haskhaskjn ashjakshkja askdnsajkd"
+      "dataNascita": "2025-07-11",
+      "corso": "wordpress",
+      "codiceFiscale": "CRDVLR01S08H501U",
+      "note": "prova 12:42",
+      "timeStamp": "2025-07-10T10:42:48.664Z",
+      "id": "3to7"
     },
     {
-      "id": "1acc",
-      "nome": "valerio",
-      "cognome": "Corda",
-      "email": "info@valeriocorda.it",
-      "telefono": "2318217361",
-      "dataNascita": "2025-06-19",
-      "corso": "html",
-      "note": "as a asa"
-    },
-    {
-      "id": "ba4b",
-      "nome": "vlaeio",
-      "cognome": "corda",
-      "email": "info@valeriocora.it",
-      "telefono": "3457166789",
-      "dataNascita": "2025-06-06",
-      "corso": "java",
-      "note": "asda adada asa"
-    },
-    {
-      "id": "f23a",
-      "nome": "Valerio",
-      "cognome": "corda",
-      "email": "info@valeriocorda.it",
-      "telefono": "3412122123",
-      "dataNascita": "2025-06-20",
-      "corso": "cucina",
-      "note": "a asa as"
-    },
-    {
-      "id": "328c",
-      "nome": "Angelo",
-      "cognome": "Nawfal",
-      "email": "info@angelo.it",
-      "telefono": "3171716182",
-      "dataNascita": "2025-06-13",
-      "corso": "cucina",
-      "note": "asda asdh asd adaas"
-    },
-    {
-      "id": "f1db",
-      "nome": "Valerio",
-      "cognome": "Corda",
-      "email": "info@valewria.com",
-      "telefono": "1737488193",
-      "dataNascita": "2025-07-01",
-      "corso": "cucina",
-      "note": "prova prova"
-    },
-    {
-      "id": "fbc9",
       "nome": "Valerio",
       "cognome": "Corda",
       "email": "info@valeriocorda.it",
-      "telefono": "1212323232",
-      "dataNascita": "2025-07-07",
-      "corso": "java",
-      "note": "gvghv j gjfgj"
+      "telefono": "3518576702",
+      "dataNascita": "2025-07-11",
+      "corso": "wordpress",
+      "codiceFiscale": "CRDVLR01S08H501U",
+      "note": "prova 12:48",
+      "timeStamp": "2025-07-10T10:48:03.004Z",
+      "id": "8qo7"
     },
     {
       "nome": "valerio",
-      "cognome": "corda",
-      "email": "info@valeriocorda.it",
-      "telefono": "1231312232",
-      "dataNascita": "2025-07-12",
-      "corso": "java",
-      "note": "",
-      "id": "vd8g"
+      "cognome": "ada",
+      "email": "ifna@afa.it",
+      "telefono": "1123124242",
+      "dataNascita": "2025-07-09",
+      "corso": "wordpress",
+      "codiceFiscale": "crdvlr01s08h501u",
+      "note": "12:48",
+      "timeStamp": "2025-07-10T10:48:56.964Z",
+      "timestampLocale": "10-07-2025_12-48",
+      "id": "i66f"
     }
   ]
 }
