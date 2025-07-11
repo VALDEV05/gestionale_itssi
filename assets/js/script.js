@@ -12,19 +12,7 @@ document.getElementById('datiUtenteForm').addEventListener('submit', function (e
 
 function prendiDatiDalForm() {
   const now = new Date();
-  const dati = {
-    nome: document.getElementById('nome').value.trim(),
-    cognome: document.getElementById('cognome').value.trim(),
-    email: document.getElementById('email').value.trim(),
-    telefono: document.getElementById('telefono').value.trim(),
-    dataNascita: document.getElementById('dataNascita').value,
-    corso: document.getElementById('corso').value,
-    codiceFiscale: document.getElementById('codiceFiscale').value,
-    note: document.getElementById('note').value.trim(),
-    timeStamp: now.toISOString()
-  };
-
-  const opzioni = {
+    const opzioni = {
     timeZone: 'Europe/Rome',
     day: '2-digit',
     month: '2-digit',
@@ -35,10 +23,22 @@ function prendiDatiDalForm() {
   };
   const formatoLocale = new Intl.DateTimeFormat('it-IT', opzioni).formatToParts(now);
   const parti = Object.fromEntries(formatoLocale.map(({ type, value }) => [type, value]));
+  const dati = {
+    nome: document.getElementById('nome').value.trim(),
+    cognome: document.getElementById('cognome').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    telefono: document.getElementById('telefono').value.trim(),
+    dataNascita: document.getElementById('dataNascita').value,
+    corso: document.getElementById('corso').value,
+    codiceFiscale: document.getElementById('codiceFiscale').value,
+    note: document.getElementById('note').value.trim(),
+    timestamp:{
+      dataAggiunta: `${parti.day}/${parti.month}/${parti.year}`,
+      orarioAggiunta: `${parti.hour}:${parti.minute}`,
+      timestampLocale: `${parti.day}-${parti.month}-${parti.year}_${parti.hour}-${parti.minute}`
+    }
+  };
 
-  dati.timestampLocale = `${parti.day}-${parti.month}-${parti.year}_${parti.hour}-${parti.minute}`;
-
-  console.log("Dati raccolti:", dati);
   return dati;
 }
 

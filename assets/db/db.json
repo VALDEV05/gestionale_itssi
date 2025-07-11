@@ -1,41 +1,20 @@
 {
   "utenti": [
     {
-      "nome": "Valerio",
-      "cognome": "Corda",
-      "email": "info@valeriocorda.it",
-      "telefono": "3518576702",
-      "dataNascita": "2025-07-11",
-      "corso": "wordpress",
-      "codiceFiscale": "CRDVLR01S08H501U",
-      "note": "prova 12:42",
-      "timeStamp": "2025-07-10T10:42:48.664Z",
-      "id": "3to7"
-    },
-    {
-      "nome": "Valerio",
-      "cognome": "Corda",
-      "email": "info@valeriocorda.it",
-      "telefono": "3518576702",
-      "dataNascita": "2025-07-11",
-      "corso": "wordpress",
-      "codiceFiscale": "CRDVLR01S08H501U",
-      "note": "prova 12:48",
-      "timeStamp": "2025-07-10T10:48:03.004Z",
-      "id": "8qo7"
-    },
-    {
       "nome": "valerio",
-      "cognome": "ada",
-      "email": "ifna@afa.it",
-      "telefono": "1123124242",
-      "dataNascita": "2025-07-09",
-      "corso": "wordpress",
-      "codiceFiscale": "crdvlr01s08h501u",
-      "note": "12:48",
-      "timeStamp": "2025-07-10T10:48:56.964Z",
-      "timestampLocale": "10-07-2025_12-48",
-      "id": "i66f"
+      "cognome": "corda",
+      "email": "info@valeriocorda.it",
+      "telefono": "3518576702",
+      "dataNascita": "2025-07-04",
+      "corso": "java",
+      "codiceFiscale": "CRDVLR01S08H501U",
+      "note": "12:59",
+      "timestamp": {
+        "dataAggiunta": "10/07-2025",
+        "orarioAggiunta": "13:07",
+        "timestampLocale": "10-07-2025_13-07"
+      },
+      "id": "l0xs"
     }
   ]
 }

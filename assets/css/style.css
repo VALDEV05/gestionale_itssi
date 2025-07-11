@@ -68,10 +68,16 @@ body {
   margin-left: auto;
   margin-top: 12px;
   margin-right: 16px;
-  background-image: linear-gradient(102deg, #43c5e4 1%, #454495 70%, #36418d 83%, #043673 101%);
-  transition: all ease-in-out .7s;
+  background-image: linear-gradient(
+    102deg,
+    #43c5e4 1%,
+    #454495 70%,
+    #36418d 83%,
+    #043673 101%
+  );
+  transition: all ease-in-out 0.7s;
 }
-.btn-itssi:hover{
+.btn-itssi:hover {
   color: white;
   background-color: transparent;
   border-color: white;
@@ -153,18 +159,19 @@ main.site-main .container .row .col-md-10 form label {
   padding-left: 18px;
   margin-bottom: 6px;
 }
+
 /* ==========================================================================
   8.0 - login
    ========================================================================== */
 
 /* Qui aggiungeremo il css relativo alla pagina login.html */
-main.site-main.panel_login .alert{
+main.site-main.panel_login .alert {
   max-width: 400px;
   margin: 0 auto;
   height: 60px;
 }
 
-main.site-main.panel_login .container .row .col-md-10.mx-auto{
+main.site-main.panel_login .container .row .col-md-10.mx-auto {
   margin-top: 24px;
 }
 main.site-main.panel_login .container-form {
@@ -209,6 +216,17 @@ main.site-main.panel_login
   opacity: 0.75;
 }
 
+/* ==========================================================================
+  9.0 - visualizzazione utenti
+   ========================================================================== */
+main.site-main.visu_utenti .container .row .col-md-10 table {
+  width: 100%;
+}
+main.site-main.visu_utenti .container .row .col-md-10 table tr th:first-child,
+main.site-main.visu_utenti .container .row .col-md-10 table tr td:first-child {
+  width: fit-content !important;
+  flex: unset;
+}
 /* ==========================================================================
   -1 - Responsive
    ========================================================================== */
