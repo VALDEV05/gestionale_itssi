@@ -38,7 +38,7 @@ document
           showAlert(`Benvenuto, ${utente.username}`, "success");
 
           setTimeout(() => {
-            window.location.href = "nuovoUtente.html";
+            window.location.href = "nuovoStudente.html";
           }, 1000);
         } else {
           showAlert("Username o password errati", "danger");

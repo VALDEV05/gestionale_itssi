@@ -72,12 +72,12 @@ async function inviaDatiAlServer(dati) {
   console.log("Invio dei dati al server in corso...");
 
   try {
-    const res = await fetch('http://localhost:3000/utenti');
-    if (!res.ok) throw new Error("Impossibile leggere gli utenti esistenti");
-    const utenti = await res.json();
+    const res = await fetch('http://localhost:3000/api/studenti');
+    if (!res.ok) throw new Error("Impossibile leggere gli studenti esistenti");
+    const studenti = await res.json();
 
     let id;
-    const esisteID = (id) => utenti.some(u => u.id === id);
+    const esisteID = (id) => studenti.some(u => u.id === id);
 
     // Genera un ID unico
     do {
@@ -86,7 +86,7 @@ async function inviaDatiAlServer(dati) {
 
     dati.id = id;
 
-    const postResponse = await fetch('http://localhost:3000/utenti', {
+    const postResponse = await fetch('http://localhost:3000/api/studenti', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

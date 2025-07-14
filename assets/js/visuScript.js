@@ -1,4 +1,4 @@
- fetch('http://localhost:3000/utenti')
+ fetch('http://localhost:3000/api/studenti')
       .then(response => {
         if (!response.ok) {
           throw new Error('Errore nel recupero dei dati');
@@ -9,6 +9,9 @@
         const tbody = document.querySelector("#studentiTable tbody");
 
         studenti.forEach(studente => {
+
+          console.log(studente.id);
+          
           //for deploy
           console.log(studente);
           
@@ -17,7 +20,7 @@
           
 
           row.innerHTML = `
-            <td class="col"><a href="http://localhost:3000/utente/${studente.id}" target="_blank">${studente.id}</a></td>
+            <td class="col"><a href="http://localhost:3000/studente/${studente.id}" target="_blank">${studente.id}</a></td>
             <td class="col">${studente.nome}</td>
             <td class="col">${studente.cognome}</td>
             <td class="col">${studente.email}</td>

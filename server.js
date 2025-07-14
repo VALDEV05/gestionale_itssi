@@ -13,17 +13,17 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'login.html'));
 });
 
-// route single utente
-app.get('/utente/:id', (req, res) => {
-  res.sendFile(path.join(__dirname, 'utente.html'));
+// route single studente
+app.get('/studente/:id', (req, res) => {
+  res.sendFile(path.join(__dirname, 'studente.html'));
 });
 
 
 
-// ✅ Endpoint per utenti
-app.get('/utenti', (req, res) => {
+// ✅ Endpoint per studenti
+app.get('/api/studenti', (req, res) => {
   console.log("✅ POST ricevuto:", req.body);
-  const filePath = path.join(__dirname, 'assets/db/db.json');
+  const filePath = path.join(__dirname, 'assets/db/studenti.json');
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       return res.status(500).json({ errore: 'Impossibile leggere il file' });
@@ -31,32 +31,32 @@ app.get('/utenti', (req, res) => {
 
     try {
       const json = JSON.parse(data);
-      res.json(json.utenti); // restituisce solo l'array utenti
+      res.json(json.studenti); // restituisce solo l'array studenti
     } catch (e) {
       res.status(500).json({ errore: 'Errore nella lettura del JSON' });
     }
   });
 });
 
-app.post('/utenti', (req, res) => {
-  const filePath = path.join(__dirname, 'assets/db/db.json');
-  const nuovoUtente = req.body;
+app.post('/api/studenti', (req, res) => {
+  const filePath = path.join(__dirname, 'assets/db/studenti.json');
+  const nuovostudente = req.body;
 
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) return res.status(500).json({ errore: 'Errore di lettura file' });
 
     try {
       const db = JSON.parse(data);
-      const idEsistente = db.utenti.some(u => u.id === nuovoUtente.id);
+      const idEsistente = db.studenti.some(u => u.id === nuovostudente.id);
       if (idEsistente) {
         return res.status(400).json({ errore: 'ID già esistente' });
       }
 
-      db.utenti.push(nuovoUtente);
+      db.studenti.push(nuovostudente);
 
       fs.writeFile(filePath, JSON.stringify(db, null, 2), (err) => {
         if (err) return res.status(500).json({ errore: 'Errore di scrittura' });
-        res.status(201).json(nuovoUtente);
+        res.status(201).json(nuovostudente);
       });
     } catch (e) {
       res.status(500).json({ errore: 'Errore nel parsing JSON' });
@@ -64,9 +64,9 @@ app.post('/utenti', (req, res) => {
   });
 });
 
-//utente singolo
-app.get('/api/utente/:id', (req, res) => {
-  const filePath = path.join(__dirname, 'assets/db/db.json');
+//studente singolo
+app.get('/api/studente/:id', (req, res) => {
+  const filePath = path.join(__dirname, 'assets/db/studenti.json');
   const userId = req.params.id;
 
   fs.readFile(filePath, 'utf8', (err, data) => {
@@ -74,12 +74,12 @@ app.get('/api/utente/:id', (req, res) => {
 
     try {
       const db = JSON.parse(data);
-      const utente = db.utenti.find(u => u.id === userId);
+      const studente = db.studenti.find(u => u.id === userId);
 
-      if (utente) {
-        res.json(utente);
+      if (studente) {
+        res.json(studente);
       } else {
-        res.status(404).json({ errore: 'Utente non trovato' });
+        res.status(404).json({ errore: 'studente non trovato' });
       }
     } catch {
       res.status(500).json({ errore: 'Errore nel parsing JSON' });

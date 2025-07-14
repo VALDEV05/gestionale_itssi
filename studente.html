@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Dati studente</title>
+</head>
+<body>
+  <h1>Dati studente</h1>
+  <div id="infoStudente"></div>
+
+  <script>
+    // 1️⃣ Ottieni l'ID studente dal pathname: /studente/id
+    const path = window.location.pathname;
+    const idStudente = path.split("/").pop();
+    
+
+    if (!idStudente) {
+      document.getElementById('infoStudente').textContent = 'ID studente non fornito.';
+    } else {
+      // 2️⃣ Richiama l'API per un singolo studente
+      fetch(`/api/studente/${idStudente}`)
+        .then(res => {
+          if (!res.ok) throw new Error('studente non trovato');
+          return res.json();
+        })
+        .then(studente => {
+          // 3️⃣ Mostra i dati in pagina
+          document.getElementById('infoStudente').innerHTML = `
+            <ul>
+              <li><strong>Nome:</strong> ${studente.nome}</li>
+              <li><strong>Cognome:</strong> ${studente.cognome}</li>
+              <li><strong>Email:</strong> ${studente.email}</li>
+              <li><strong>Telefono:</strong> ${studente.telefono}</li>
+              <li><strong>Corso:</strong> ${studente.corso}</li>
+            </ul>
+          `;
+        })
+        .catch(err => {
+          document.getElementById('infoStudente').textContent = err.message;
+        });
+    }
+  </script>
+</body>
+</html>
