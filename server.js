@@ -13,6 +13,13 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'login.html'));
 });
 
+app.get('/aggiungiStudente', (req, res) => {
+  res.sendFile(path.join(__dirname, 'nuovoStudente.html'));
+});
+app.get('/visualizzaStudenti', (req, res) => {
+  res.sendFile(path.join(__dirname, 'visuStudenti.html'));
+});
+
 // route single studente
 app.get('/studente/:id', (req, res) => {
   res.sendFile(path.join(__dirname, 'studente.html'));
