@@ -1,20 +1,58 @@
 {
   "studenti": [
     {
-      "nome": "valerio",
-      "cognome": "corda",
-      "email": "info@valeriocorda.it",
-      "telefono": "3518576702",
-      "dataNascita": "2025-07-04",
-      "corso": "java",
-      "codiceFiscale": "CRDVLR01S08H501U",
-      "note": "12:59",
-      "timestamp": {
-        "dataAggiunta": "10/07-2025",
-        "orarioAggiunta": "13:07",
-        "timestampLocale": "10-07-2025_13-07"
+      "infoPersonali": {
+        "nome": "Valerio",
+        "cognome": "corda",
+        "email": "info@asad.it",
+        "telefono": "2112213212",
+        "codiceFiscale": "djjdjdjddrdtdudo",
+        "infoNascita": {
+          "luogoNascita": "rhgvj",
+          "nazionalita": "fd",
+          "dataNascita": "15-07-2025"
+        },
+        "residenza": {
+          "indirizzo": "vada als jalj a",
+          "cap": "10022",
+          "provincia": "RM",
+          "nazione": "ITA"
+        }
       },
-      "id": "l0xs"
+      "corso": "wordpress",
+      "note": "",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "18:27",
+        "timestampLocale": "14-07-2025_18-27"
+      },
+      "id": "hctw"
+    },
+    {
+      "infoPersonali": {
+        "nome": "luigi",
+        "cognome": "Corda",
+        "email": "info@valeriocorda.it",
+        "telefono": "1234567890",
+        "codiceFiscale": "CRDVLRLSLSLSLSLS",
+        "sesso": "m",
+        "infoNascita": {
+          "luogoNascita": "Roma",
+          "nazionalita": "Italia"
+        },
+        "residenza": {
+          "provincia": "Roma",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "cucina",
+      "note": "",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "20:44",
+        "timestampLocale": "14-07-2025_20-44"
+      },
+      "id": "38qf"
     }
   ]
 }

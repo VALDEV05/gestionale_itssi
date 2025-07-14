@@ -71,6 +71,37 @@ app.post('/api/studenti', (req, res) => {
   });
 });
 
+//put
+
+app.put('/api/studente/:id', (req, res) => {
+  const filePath = path.join(__dirname, 'assets/db/studenti.json');
+  const id = req.params.id;
+  const updatedData = req.body;
+
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) return res.status(500).json({ errore: 'Errore di lettura file' });
+
+    try {
+      const db = JSON.parse(data);
+      const index = db.studenti.findIndex(u => u.id === id);
+
+      if (index === -1) {
+        return res.status(404).json({ errore: 'Studente non trovato' });
+      }
+
+      db.studenti[index] = { ...db.studenti[index], ...updatedData };
+
+      fs.writeFile(filePath, JSON.stringify(db, null, 2), (err) => {
+        if (err) return res.status(500).json({ errore: 'Errore di scrittura' });
+        res.json(db.studenti[index]);
+      });
+    } catch (e) {
+      res.status(500).json({ errore: 'Errore nel parsing JSON' });
+    }
+  });
+});
+
+
 //studente singolo
 app.get('/api/studente/:id', (req, res) => {
   const filePath = path.join(__dirname, 'assets/db/studenti.json');

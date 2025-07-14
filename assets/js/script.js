@@ -10,6 +10,11 @@ document.getElementById('datiUtenteForm').addEventListener('submit', function (e
   }
 });
 
+function formattaData(dataDinamica) {
+  const [anno, mese, giorno] = dataDinamica.split('-');
+  return `${giorno}-${mese}-${anno}`;
+}
+
 function prendiDatiDalForm() {
   const now = new Date();
     const opzioni = {
@@ -24,13 +29,26 @@ function prendiDatiDalForm() {
   const formatoLocale = new Intl.DateTimeFormat('it-IT', opzioni).formatToParts(now);
   const parti = Object.fromEntries(formatoLocale.map(({ type, value }) => [type, value]));
   const dati = {
-    nome: document.getElementById('nome').value.trim(),
-    cognome: document.getElementById('cognome').value.trim(),
-    email: document.getElementById('email').value.trim(),
-    telefono: document.getElementById('telefono').value.trim(),
-    dataNascita: document.getElementById('dataNascita').value,
+    infoPersonali:{
+      nome: document.getElementById('nome').value.trim(),
+      cognome: document.getElementById('cognome').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      telefono: document.getElementById('telefono').value.trim(),
+      codiceFiscale: document.getElementById('codiceFiscale').value,
+      sesso: document.getElementById("sesso").value,
+      infoNascita:{
+        luogoNascita: document.getElementById('luogoNascita').value.trim(),
+        nazionalita: document.getElementById('nazionalita').value.trim(),
+        dataNascita: formattaData(document.getElementById('dataNascita').value), //conversione dinamica
+      },
+      residenza: {
+        indirizzo : document.getElementById('indirizzoResidenza').value.trim(),
+        cap: document.getElementById('capResidenza').value.trim(),
+        provincia: document.getElementById('provincia').value.trim(),
+        nazione: document.getElementById('nazione').value.trim(),
+      }
+    },
     corso: document.getElementById('corso').value,
-    codiceFiscale: document.getElementById('codiceFiscale').value,
     note: document.getElementById('note').value.trim(),
     timestamp:{
       dataAggiunta: `${parti.day}/${parti.month}/${parti.year}`,
@@ -45,17 +63,17 @@ function prendiDatiDalForm() {
 function validaDati(dati) {
   let valido = true;
 
-  if (dati.nome === "" || dati.cognome === "") {
+  if (dati.infoPersonali.nome === "" || dati.infoPersonali.cognome === "") {
     console.log("Nome e cognome sono obbligatori.");
     valido = false;
   }
 
-  if (!dati.email.includes('@')) {
+  if (!dati.infoPersonali.email.includes('@')) {
     console.log("Email non valida.");
     valido = false;
   }
 
-  if (!/^\d{10}$/.test(dati.telefono)) {
+  if (!/^\d{10}$/.test(dati.infoPersonali.telefono)) {
     console.log("Numero di telefono non valido (attesi 10 cifre).");
     valido = false;
   }

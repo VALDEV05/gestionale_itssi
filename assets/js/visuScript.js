@@ -16,19 +16,19 @@
           console.log(studente);
           
           const row = document.createElement("tr");
-          row.className = "row " +  studente.corso?.toLowerCase() || '';
+          row.className = studente.corso?.toLowerCase() || '';
           
 
           row.innerHTML = `
-            <td class="col"><a href="http://localhost:3000/studente/${studente.id}" target="_blank">${studente.id}</a></td>
-            <td class="col">${studente.nome}</td>
-            <td class="col">${studente.cognome}</td>
-            <td class="col">${studente.email}</td>
-            <td class="col">${studente.telefono}</td>
-            <td class="col">${studente.codiceFiscale}</td>
-            <td class="col">${studente.dataNascita}</td>
-            <td class="col">${studente.corso}</td>
-            <td class="col">${studente.note}</td>
+            <td><a href="http://localhost:3000/studente/${studente.id}" target="_blank">${studente.id}</a></td>
+            <td>${studente.infoPersonali.nome}</td>
+            <td>${studente.infoPersonali.cognome}</td>
+            <td>${studente.infoPersonali.email}</td>
+            <td>${studente.infoPersonali.telefono}</td>
+            <td>${studente.infoPersonali.codiceFiscale}</td>
+            <td>${studente.infoPersonali.infoNascita.dataNascita}</td>
+            <td>${studente.corso}</td>
+            <td><a class="btn btn-primary btn-altro" href="http://localhost:3000/studente/${studente.id}" target="_blank">altro</a></td>
           `;
 
           tbody.appendChild(row);

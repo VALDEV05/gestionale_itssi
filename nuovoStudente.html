@@ -121,19 +121,90 @@
                     required
                   />
                 </div>
+                
                 <div class="col">
-                   <label for="date" class="form-label">Tipologia di corso</label>
+                  <label for="luogoNascita" class="form-label">Luogo di Nascita</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci il luogo di nascita"
+                    id="luogoNascita"
+                    aria-label="Inserisci il luogo di nascita"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="nazionalita" class="form-label">Nazionalità</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci il nazionalità"
+                    id="nazionalita"
+                    aria-label="Inserisci il nazionalità"
+                    required
+                  />
+                </div>
+                <div class="col">
+                   <label for="sesso" class="form-label">Sesso</label>
                   <select
                     class="form-select"
-                    id="corso"
-                    aria-label="Tipologia di corso">
-                    <option selected>Tipologia di corso</option>
-                    <option value="wordpress">wordpress</option>
-                    <option value="java">java</option>
-                    <option value="cucina">cucina</option>
-                    <option value="gelateria">gelateria</option>
+                    id="sesso"
+                    aria-label="Tipologia di sesso">
+                    <option selected>sesso</option>
+                    <option value="M">m</option>
+                    <option value="F">f</option>
+                    <option value="altro">altro</option>
                   </select>
                 </div>
+               
+              </div>
+                <div class="row mt-3">
+                <div class="col">
+                  <label for="indirizzoResidenza" class="form-label">Residenza</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci l'indirizzo di residenza"
+                    id="indirizzoResidenza"
+                    aria-label="Inserisci l'indirizzo di residenza"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="capResidenza" class="form-label">Codice postale (CAP)</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Inserisci il codice postale (CAP)"
+                    id="capResidenza"
+                    aria-label="Inserisci il codice postale (CAP)"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="provincia" class="form-label">Provincia</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci la provincia"
+                    id="provincia"
+                    aria-label="Inserisci la provincia"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="nazione" class="form-label">Nazione</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci la nazione"
+                    id="nazione"
+                    aria-label="Inserisci la nazione"
+                    required
+                  />
+                </div>
+                
+               
               </div>
               <div class="row mt-3">
                 <div class="col">
@@ -146,6 +217,19 @@
                     aria-label="Inserisci codice fiscale"
                     required
                   />
+                </div>
+                 <div class="col">
+                   <label for="corso" class="form-label">Tipologia di corso</label>
+                  <select
+                    class="form-select"
+                    id="corso"
+                    aria-label="Tipologia di corso">
+                    <option selected>Tipologia di corso</option>
+                    <option value="wordpress">wordpress</option>
+                    <option value="java">java</option>
+                    <option value="cucina">cucina</option>
+                    <option value="gelateria">gelateria</option>
+                  </select>
                 </div>
               </div>
               <div class="row mt-3">

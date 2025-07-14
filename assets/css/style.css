@@ -33,6 +33,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+p{
+  margin-bottom: 0;
+}
 /* ==========================================================================
   3.0 - Fonts
    ========================================================================== */
@@ -52,9 +55,19 @@ body * {
   color: var(--black);
   font-weight: 500;
 }
+/* Nasconde solo la scrollbar, ma il contenuto può ancora scorrere */
+body {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* Internet Explorer 10+ */
+  overflow-y: scroll;          /* mantiene comportamento scrollabile */
+}
+
+body::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Opera */
+}
+
 body {
   background-color: var(--bg-color);
-  overflow-y: hidden;
   position: relative;
 }
 
@@ -219,13 +232,21 @@ main.site-main.panel_login
 /* ==========================================================================
   9.0 - visualizzazione utenti
    ========================================================================== */
-main.site-main.visu_utenti .container .row .col-md-10 table {
+main.site-main.visu_utenti .container .row .col-md-12 table {
   width: 100%;
 }
-main.site-main.visu_utenti .container .row .col-md-10 table tr th:first-child,
-main.site-main.visu_utenti .container .row .col-md-10 table tr td:first-child {
+main.site-main.visu_utenti .container .row .col-md-12 table tr th:first-child,
+main.site-main.visu_utenti .container .row .col-md-12 table tr td:first-child {
   width: fit-content !important;
   flex: unset;
+  padding-left: 14px;
+}
+main.site-main.visu_utenti .container .row .col-md-12 table{
+  border-radius: 12px;
+  overflow: hidden;
+}
+main.site-main.visu_utenti .container .row .col-md-12 table tr td .btn-altro{
+  padding: 0 18px;
 }
 /* ==========================================================================
   -1 - Responsive
