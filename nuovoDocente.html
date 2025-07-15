@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserimento Docenti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <div class="containerTitle">
+    <h1>form di inserimento docente</h1>
+    </div>
+
+    <form id="formDocente">
+      <label for="nome"></label>
+      <input type="text" class="inputLabel" placeholder="Nome:" id="nome" name="nome" required />
+
+      <label for="cognome"></label>
+      <input type="text" class="inputLabel" placeholder="cognome:" id="cognome" name="cognome" required />
+
+      <select class="form-select" class="inputLabel" id="sesso" aria-label="Default select example">
+  <option selected>Sesso</option>
+  <option value="maschio">Maschio</option>
+  <option value="femmina">Femmina</option>
+  <option value="altro">Altro</option>
+</select>
+
+      <label for="email"></label>
+      <input type="email" placeholder="Email:" class="text-lowercase" class="inputLabel" id="email" name="email" required />
+
+      <label for="telefono"></label>
+      <input type="tel" class="inputLabel" placeholder="Telefono:" id="telefono" name="telefono" required />
+
+      <label for="dataNascita"></label>
+      <input type="date" class="inputLabel" placeholder="Data di nascita:" id="dataNascita" name="dataNascita" required />
+
+      <label for="cf"></label>
+      <input type="text" class="text-uppercase" placeholder="Codice fiscale:" class="inputLabel" id="cf" name="cf" required />
+
+            <label for="note"></label>
+      <input type="text" class="inputLabel" placeholder="note:" id="note" name="note"/>
+
+<select class="form-select" class="inputLabel" id="materiaInsegnata" aria-label="Default select example">
+  <option selected>Materia insegnata</option>
+  <option value="Italiano">Italiano</option>
+  <option value="Matematica">Matematica</option>
+  <option value="Inglese">Inglese</option>
+  <option value="Storia">Storia</option>
+  <option value="Geografia">Geografia</option>
+  <option value="Filosofia">Filosofia</option>
+</select>
+
+      <label for="dataAssunzione">Data Assunzione</label>
+      <input type="date" id="dataAssunzione" class="inputLabel" name="dataAssunzione" required />
+
+      <div class="containerIndirizzo">
+        <h3>Indirizzo:</h3>
+        <label for="via"></label>
+      <input type="text" class="inputLabel" placeholder="via:" id="via" name="via"/>
+      <label for="cap"></label>
+      <input type="number" class="inputLabel" placeholder="cap:" id="cap" name="cap"/>
+      <label for="comune"></label>
+      <input type="text" class="inputLabel" placeholder="comune:" id="comune" name="comune"/>
+      <label for="provincia"></label>
+      <input type="text" class="inputLabel" placeholder="provincia:" id="provincia" name="provincia"/>
+      <label for="nazione"></label>
+      <input type="text" class="inputLabel" placeholder="nazione:" id="nazione" name="nazione"/>
+      </div>
+
+
+
+      <button class="salva" type="submit">Salva</button>
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="./assets/js/inserimentoDocenti.js"></script>
+  </body>
+</html>

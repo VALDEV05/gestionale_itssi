@@ -1,0 +1,33 @@
+{
+  "docenti": [
+    {
+      "infoPersonali": {
+        "nome": "Valerio",
+        "cognome": "Corda",
+        "sesso": "maschio",
+        "email": "info@valeriocorda.it",
+        "telefono": "1312312122",
+        "dataNascita": "2025-07-09",
+        "cf": "ahshshhshhhhhhhh"
+      },
+      "lavoro": {
+        "materiaInsegnata": "Inglese",
+        "dataAssunzione": "2025-07-10"
+      },
+      "residenza": {
+        "via": "",
+        "cap": "",
+        "comune": "",
+        "provincia": "",
+        "nazione": ""
+      },
+      "timestamp": {
+        "dataAggiunta": "15/07/2025",
+        "orarioAggiunta": "09:19",
+        "timestampLocale": "15-07-2025_09-19"
+      },
+      "note": "asjaljdla",
+      "id": "gwm8"
+    }
+  ]
+}
