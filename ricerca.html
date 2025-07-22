@@ -46,9 +46,8 @@
       </div>
     </main>
     <!-- /.site-main -->
-    <footer class="site-footer">
-      Copyright ITSSIxellence © All rights reserved. design with &hearts; by
-      <a href="https://valeriocorda.it">valeriocorda.it</a>
+     <footer class="site-footer" id="site-footer">
+      <!-- DINAMICO -->
     </footer>
     <!-- /.site-footer -->
 <script src="./assets/js/generale.js"></script>
@@ -105,6 +104,7 @@
                       <th>Cognome</th>
                       <th>Email</th>
                       <th>Telefono</th>
+                      <th>Altro</th>  
                     </tr>
                   </thead>
                   <tbody>
@@ -113,7 +113,8 @@
                         <td>${s.infoPersonali.nome}</td>
                         <td>${s.infoPersonali.cognome}</td>
                         <td>${s.infoPersonali.email}</td>
-                        <td>${s.infoPersonali.telefono}</td>
+                        <td>${s.infoPersonali.tel}</td>
+                      <td><a class="btn btn-primary btn-altro" href="http://localhost:3000/studente/${s.id}" target="_blank">altro</a></td>
                       </tr>
                     `).join('')}
                   </tbody>
@@ -132,6 +133,7 @@
                       <th>Cognome</th>
                       <th>Email</th>
                       <th>Telefono</th>
+                      <th>Altro</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -141,6 +143,7 @@
                         <td>${d.infoPersonali.cognome}</td>
                         <td>${d.infoPersonali.email}</td>
                         <td>${d.infoPersonali.telefono}</td>
+                        <td><a class="btn btn-primary btn-altro" href="http://localhost:3000/docente/${d.id}" target="_blank">altro</a></td>
                       </tr>
                     `).join('')}
                   </tbody>

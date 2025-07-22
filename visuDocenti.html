@@ -16,24 +16,36 @@
     <header class="site-header" id="site-header">
       <!-- DINAMICO -->
     </header>
-    <div class="container-table">
-      <div class="row-table">
-        <div class="col-md-10 mx-auto">
-          <table id="tabellaDocenti">
-            <tr class="row">
-              <td class="col">Nome</td>
-              <td class="col">Cognome</td>
-              <td class="col">Email</td>
-              <td class="col">Telefono</td>
-              <td class="col">Data di nascita</td>
-              <td class="col">Codice fiscale</td>
-              <td class="col">Materia insegnata</td>
-              <td class="col">Data di assunzione</td>
-            </tr>
-          </table>
+    <main class="site-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <table
+              id="tabellaDocenti"
+              class="table table-striped table-hover shadow"
+            >
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Cognome</th>
+                  <th>Email</th>
+                  <th>Telefono</th>
+                  <th>Data di Nascita</th>
+                  <th>Codice Fiscale</th>
+                  <th>Materia Insegnata</th>
+                  <th>Data di Assunzione</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+      <!-- DINAMICO -->
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

@@ -24,8 +24,8 @@
             <td>${studente.infoPersonali.nome}</td>
             <td>${studente.infoPersonali.cognome}</td>
             <td>${studente.infoPersonali.email}</td>
-            <td>${studente.infoPersonali.telefono}</td>
-            <td>${studente.infoPersonali.codiceFiscale}</td>
+            <td>${studente.infoPersonali.tel}</td>
+            <td>${studente.infoPersonali.CF}</td>
             <td>${studente.infoPersonali.infoNascita.dataNascita}</td>
             <td>${studente.corso}</td>
             <td><a class="btn btn-primary btn-altro" href="http://localhost:3000/studente/${studente.id}" target="_blank">altro</a></td>

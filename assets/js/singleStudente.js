@@ -17,14 +17,14 @@ if (!idStudente) {
             document.getElementById("studenteNome").textContent = studente.infoPersonali.nome;
             document.getElementById("studenteCognome").textContent = studente.infoPersonali.cognome;
             document.getElementById("studenteEmail").textContent = studente.infoPersonali.email;
-            document.getElementById("studenteTelefono").textContent = studente.infoPersonali.telefono;
-            document.getElementById("studenteCF").textContent = studente.infoPersonali.codiceFiscale;
+            document.getElementById("studenteTelefono").textContent = studente.infoPersonali.tel;
+            document.getElementById("studenteCF").textContent = studente.infoPersonali.CF;
             document.getElementById('sesso').textContent = studente.infoPersonali.sesso;
             /* document.getElementById("sesso") = studente.infoPersonali.sesso; */
             //document.getElementById("studenteDataNascita").textContent = studente.infoPersonali.infoNascita.dataNascita;
             document.getElementById("studenteLuogoNascita").textContent = studente.infoPersonali.infoNascita.luogoNascita;
              document.getElementById("studenteNazionalita").textContent = studente.infoPersonali.infoNascita.nazionalita;
-            document.getElementById("studenteIndirizzo").textContent = studente.infoPersonali.residenza.indirizzo;
+            document.getElementById("studenteIndirizzo").textContent = studente.infoPersonali.residenza.via;
             document.getElementById("studenteCAP").textContent = studente.infoPersonali.residenza.cap;
             document.getElementById("studenteProvincia").textContent = studente.infoPersonali.residenza.provincia;
             document.getElementById("studenteNazione").textContent = studente.infoPersonali.residenza.nazione;
@@ -37,14 +37,14 @@ if (!idStudente) {
              document.getElementById('nome').value = studente.infoPersonali.nome || '';
             document.getElementById('cognome').value = studente.infoPersonali.cognome || '';
             document.getElementById('email').value = studente.infoPersonali.email || '';
-            document.getElementById('telefono').value = studente.infoPersonali.telefono || '';
-            document.getElementById('codiceFiscale').value = studente.infoPersonali.codiceFiscale || '';
+            document.getElementById('telefono').value = studente.infoPersonali.tel || '';
+            document.getElementById('codiceFiscale').value = studente.infoPersonali.CF || '';
             document.getElementById('sesso').value = studente.infoPersonali.sesso.toLowerCase() || '';
             
             //document.getElementById('dataNascita').value = studente.infoPersonali.infoNascita.dataNascita || '';
             document.getElementById('luogoNascita').value = studente.infoPersonali.infoNascita.luogoNascita || '';
             document.getElementById('nazionalita').value = studente.infoPersonali.infoNascita.nazionalita || '';
-            document.getElementById('indirizzoResidenza').value = studente.infoPersonali.residenza.indirizzo || '';
+            document.getElementById('indirizzoResidenza').value = studente.infoPersonali.residenza.via || '';
             document.getElementById('capResidenza').value = studente.infoPersonali.residenza.cap || '';
             document.getElementById('provincia').value = studente.infoPersonali.residenza.provincia || '';
             document.getElementById('nazione').value = studente.infoPersonali.residenza.nazione || '';

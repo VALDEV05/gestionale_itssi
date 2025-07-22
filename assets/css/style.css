@@ -151,10 +151,17 @@ header.site-header nav.container .row .col-md-4 .nav-menu.nav-menu-right {
   6.0 - Footer
    ========================================================================== */
 footer.site-footer {
-  position: fixed;
+/*   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 32px;
+  mix-blend-mode: difference;
+  opacity: 0.8; */
+  margin: 0 auto;
+  padding-bottom: 12px;
+  padding-top: 32px;
+  text-align: center;
+
 }
 /* ==========================================================================
   7.0 - main

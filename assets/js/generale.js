@@ -1,13 +1,13 @@
 function addFavicon() {
-  const link = document.createElement('link');
-  link.rel = 'icon';
-  link.type = 'image/png';
-  link.href = './assets/img/favicon.png';
-  document.head.appendChild(link);
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/png';
+    link.href = './assets/img/favicon.png';
+    document.head.appendChild(link);
 }
 
-function headerConstruction (){
-    const header =`  
+function headerConstruction() {
+    const header = `  
       <nav class="container">
         <div class="row">
           <div class="col-md-4">
@@ -30,7 +30,7 @@ function headerConstruction (){
               <li class="menu-item">
                 <a
                   href="http://localhost:3000/visualizzaDocenti"
-                  >Visualizza studenti</a
+                  >Visualizza docenti</a
                 >
               </li>
             </ul>
@@ -64,13 +64,22 @@ function headerConstruction (){
     const headerElement = document.getElementById('site-header');
     console.log(headerElement);
     headerElement.innerHTML = header
-    
+
 }
 
+
+function footerConstruction() {
+    const footer = `
+      Copyright ITSSIxellence © All rights reserved. design with &hearts; by
+      <a href="https://valeriocorda.it">valeriocorda.it</a>`;
+    const footerElement = document.getElementById('site-footer');
+    console.log(footerElement);
+    footerElement.innerHTML = footer
+}
 
 
 headerConstruction();
 addFavicon();
-
+footerConstruction();
 
 

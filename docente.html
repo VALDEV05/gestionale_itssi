@@ -3,45 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <title>Dati docente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
     <header class="site-header" id="site-header">
       <!-- DINAMICO -->
     </header>
-    <h1>Dati docente</h1>
-    <div id="infoDocente"></div>
-    <script src="../assets/js/generale.js"></script>
-    <script>
-      // 1️⃣ Ottieni l'ID docente dal pathname: /docente/id
-      const path = window.location.pathname;
-      const idDocente = path.split("/").pop();
+    <h1 class="mb-4">Dati docente</h1>
+    <div class="container">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title" id="nomeCognome"></h5>
+          <p class="card-text"><strong>Matricola:</strong> <span id="matricola"></span></p>
+          <p class="card-text"><strong>Email:</strong> <span id="email"></span></p>
+          <p class="card-text"><strong>Telefono:</strong> <span id="telefono"></span></p>
+          <p class="card-text"><strong>Data di nascita:</strong> <span id="dataNascita"></span></p>
+          <p class="card-text"><strong>Luogo di nascita:</strong> <span id="luogoNascita"></span></p>
+          <div id="residenzaSection" style="display:none;">
+            <h6>Residenza</h6>
+            <p class="card-text"><strong>Indirizzo:</strong> <span id="indirizzoResidenza"></span></p>
+            <p class="card-text"><strong>Città:</strong> <span id="cittaResidenza"></span></p>
+            <p class="card-text"><strong>CAP:</strong> <span id="capResidenza"></span></p>
+            <p class="card-text"><strong>Provincia:</strong> <span id="provinciaResidenza"></span></p>
+          </div>
+          <button id="modificaDatiPersonali" class="btn btn-primary mt-3">Modifica dati</button>
+        </div>
+      </div>
 
-      if (!idDocente) {
-        document.getElementById("infoDocente").textContent =
-          "ID docente non fornito.";
-      } else {
-        // 2️⃣ Richiama l'API per un singolo docente
-        fetch(`/api/docente/${idDocente}`)
-          .then((res) => {
-            if (!res.ok) throw new Error("docente non trovato");
-            return res.json();
-          })
-          .then((docente) => {
-            // 3️⃣ Mostra i dati in pagina
-            document.getElementById("infoDocente").innerHTML = `
-            <ul>
-              <li><strong>Nome:</strong> ${docente.nome}</li>
-              <li><strong>Cognome:</strong> ${docente.cognome}</li>
-              <li><strong>Email:</strong> ${docente.email}</li>
-              <li><strong>Telefono:</strong> ${docente.telefono}</li>
-              <li><strong>Corso:</strong> ${docente.corso}</li>
-            </ul>
-          `;
-          })
-          .catch((err) => {
-            document.getElementById("infoDocente").textContent = err.message;
-          });
-      }
-    </script>
+      <div id="formModificaDati" style="display:none;">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Modifica dati docente</h5>
+            <form id="modificaDatiUtenteForm">
+              <div class="mb-3">
+                <label for="nomeInput" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nomeInput" name="nome" required />
+              </div>
+              <div class="mb-3">
+                <label for="cognomeInput" class="form-label">Cognome</label>
+                <input type="text" class="form-control" id="cognomeInput" name="cognome" required />
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput" name="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="telefonoInput" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="telefonoInput" name="telefono" />
+              </div>
+              <div class="mb-3">
+                <label for="dataNascitaInput" class="form-label">Data di nascita</label>
+                <input type="date" class="form-control" id="dataNascitaInput" name="dataNascita" required />
+              </div>
+              <div class="mb-3">
+                <label for="luogoNascitaInput" class="form-label">Luogo di nascita</label>
+                <input type="text" class="form-control" id="luogoNascitaInput" name="luogoNascita" required />
+              </div>
+              <h6>Residenza</h6>
+              <div class="mb-3">
+                <label for="indirizzoResidenzaInput" class="form-label">Indirizzo</label>
+                <input type="text" class="form-control" id="indirizzoResidenzaInput" name="indirizzoResidenza" />
+              </div>
+              <div class="mb-3">
+                <label for="cittaResidenzaInput" class="form-label">Città</label>
+                <input type="text" class="form-control" id="cittaResidenzaInput" name="cittaResidenza" />
+              </div>
+              <div class="mb-3">
+                <label for="capResidenzaInput" class="form-label">CAP</label>
+                <input type="text" class="form-control" id="capResidenzaInput" name="capResidenza" />
+              </div>
+              <div class="mb-3">
+                <label for="provinciaResidenzaInput" class="form-label">Provincia</label>
+                <input type="text" class="form-control" id="provinciaResidenzaInput" name="provinciaResidenza" />
+              </div>
+              <button type="submit" class="btn btn-success">Salva modifiche</button>
+              <button type="button" id="annullaModifica" class="btn btn-secondary ms-2">Annulla</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer" id="site-footer">
+      <!-- DINAMICO -->
+    </footer>
+    <script src="../assets/js/generale.js"></script>
+    <script src="../assets/js/singleDocente.js"></script>
   </body>
 </html>
