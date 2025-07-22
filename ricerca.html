@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modulo Utente</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+    <!-- DINAMICO -->
+    </header>
+    <!-- /.site-header -->
+    <main class="site-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form id="ricerca">
+              <div class="row">
+                <div class="col">
+                  <label for="nome_ricerca" class="form-label"
+                    >Inserisci nome da cercare</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci nome da cercare"
+                    id="nome_ricerca"
+                    aria-label="Inserisci nome da cercare"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <button type="submit" class="btn btn-itssi">Invia</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /.site-main -->
+    <footer class="site-footer">
+      Copyright ITSSIxellence © All rights reserved. design with &hearts; by
+      <a href="https://valeriocorda.it">valeriocorda.it</a>
+    </footer>
+    <!-- /.site-footer -->
+<script src="./assets/js/generale.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document
+        .getElementById("ricerca")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const nomeInput = document
+            .getElementById("nome_ricerca")
+            .value.trim()
+            .toLowerCase();
+
+          try {
+            const [resStudenti, resDocenti] = await Promise.all([
+              fetch("http://localhost:3000/api/studenti"),
+              fetch("http://localhost:3000/api/docenti"),
+            ]);
+
+            const studentiData = await resStudenti.json(); // array direttamente
+            const docentiData = await resDocenti.json(); // array direttamente
+
+            const studenti = studentiData.filter((s) =>
+              s.infoPersonali.nome.toLowerCase().includes(nomeInput)
+            );
+
+            const docenti = docentiData.filter((d) =>
+              d.infoPersonali.nome.toLowerCase().includes(nomeInput)
+            );
+
+            if (studenti.length === 0 && docenti.length === 0) {
+              alert("Nessun risultato trovato.");
+            } else {
+              const oldResults = document.getElementById("risultatiRicerca");
+              const oldBar = document.getElementById("barra-controllo");
+              if (oldResults) oldResults.remove();
+              if (oldBar) oldBar.remove();
+
+              const container = document.createElement("div");
+              container.classList.add("mt-4");
+
+              if (studenti.length > 0) {
+                const studentiTable = document.createElement("table");
+                studentiTable.className = "table table-bordered mt-3";
+                studentiTable.innerHTML = `
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Cognome</th>
+                      <th>Email</th>
+                      <th>Telefono</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${studenti.map(s => `
+                      <tr>
+                        <td>${s.infoPersonali.nome}</td>
+                        <td>${s.infoPersonali.cognome}</td>
+                        <td>${s.infoPersonali.email}</td>
+                        <td>${s.infoPersonali.telefono}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                `;
+                container.appendChild(document.createElement("h4")).textContent = "Studenti trovati";
+                container.appendChild(studentiTable);
+              }
+
+              if (docenti.length > 0) {
+                const docentiTable = document.createElement("table");
+                docentiTable.className = "table table-bordered mt-3";
+                docentiTable.innerHTML = `
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Cognome</th>
+                      <th>Email</th>
+                      <th>Telefono</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${docenti.map(d => `
+                      <tr>
+                        <td>${d.infoPersonali.nome}</td>
+                        <td>${d.infoPersonali.cognome}</td>
+                        <td>${d.infoPersonali.email}</td>
+                        <td>${d.infoPersonali.telefono}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                `;
+                container.appendChild(document.createElement("h4")).textContent = "Docenti trovati";
+                container.appendChild(docentiTable);
+              }
+
+              container.id = "risultatiRicerca";
+              document.querySelector(".site-main .container").appendChild(container);
+
+              // AGGIUNGI LA BARRA DI CONTROLLO
+              const controlloBar = document.createElement("div");
+              controlloBar.id = "barra-controllo";
+              controlloBar.className = "mt-3";
+              controlloBar.innerHTML = `
+                <button id="modificaRicerca" class="btn btn-secondary me-2">Modifica Ricerca</button>
+                <button id="cancellaRisultati" class="btn btn-danger">Cancella Risultati</button>
+              `;
+              document.querySelector(".site-main .container").appendChild(controlloBar);
+
+              document.getElementById("modificaRicerca").addEventListener("click", () => {
+                document.getElementById("nome_ricerca").focus();
+              });
+
+              document.getElementById("cancellaRisultati").addEventListener("click", () => {
+                const risultati = document.getElementById("risultatiRicerca");
+                const barra = document.getElementById("barra-controllo");
+                if (risultati) risultati.remove();
+                if (barra) barra.remove();
+                document.getElementById("nome_ricerca").value = "";
+              });
+            }
+          } catch (error) {
+            console.error("Errore nella ricerca:", error);
+            alert("Errore durante la ricerca.");
+          }
+        });
+
+      function cancellaRisultati() {
+        const risultati = document.getElementById("risultatiRicerca");
+        const barra = document.getElementById("barraRicerca");
+        if (risultati) risultati.remove();
+        if (barra) barra.remove();
+        document.getElementById("nome_ricerca").value = "";
+      }
+    </script>
+  </body>
+</html>

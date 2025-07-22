@@ -12,7 +12,9 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'login.html'));
 });
-
+app.get('/cerca', (req, res) => {
+  res.sendFile(path.join(__dirname, 'ricerca.html'));
+});
 app.get('/aggiungiStudente', (req, res) => {
   res.sendFile(path.join(__dirname, 'nuovoStudente.html'));
 });

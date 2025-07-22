@@ -2,57 +2,1503 @@
   "studenti": [
     {
       "infoPersonali": {
-        "nome": "Valerio",
-        "cognome": "corda",
-        "email": "info@asad.it",
-        "telefono": "2112213212",
-        "codiceFiscale": "djjdjdjddrdtdudo",
+        "nome": "Roberta",
+        "cognome": "Trapanese",
+        "CF": "5dwzwbm0nw6rmyqs",
+        "email": "roberta.trapanese@hotmail.it",
+        "tel": "+39 00 09243675",
+        "genere": "F",
         "infoNascita": {
-          "luogoNascita": "rhgvj",
-          "nazionalita": "fd",
-          "dataNascita": "15-07-2025"
+          "dataNascita": "2010-05-27",
+          "luogoNascita": "Mortati salentino",
+          "nazionalita": "Kazakhstan"
         },
         "residenza": {
-          "indirizzo": "vada als jalj a",
-          "cap": "10022",
-          "provincia": "RM",
-          "nazione": "ITA"
-        }
-      },
-      "corso": "wordpress",
-      "note": "",
-      "timestamp": {
-        "dataAggiunta": "14/07/2025",
-        "orarioAggiunta": "18:27",
-        "timestampLocale": "14-07-2025_18-27"
-      },
-      "id": "hctw"
-    },
-    {
-      "infoPersonali": {
-        "nome": "luigi",
-        "cognome": "Corda",
-        "email": "info@valeriocorda.it",
-        "telefono": "1234567890",
-        "codiceFiscale": "CRDVLRLSLSLSLSLS",
-        "sesso": "m",
-        "infoNascita": {
-          "luogoNascita": "Roma",
-          "nazionalita": "Italia"
-        },
-        "residenza": {
-          "provincia": "Roma",
+          "via": "Canale Troisi 347 Appartamento 03",
+          "cap": "40329",
+          "comune": "Sesto Cristina",
+          "provincia": "Venezia",
           "nazione": "Italia"
         }
       },
-      "corso": "cucina",
-      "note": "",
+      "corso": "Sviluppatore Java",
+      "note": "Assumenda inventore beatae ad cupiditate nisi.",
       "timestamp": {
         "dataAggiunta": "14/07/2025",
-        "orarioAggiunta": "20:44",
-        "timestampLocale": "14-07-2025_20-44"
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
       },
-      "id": "38qf"
+      "id": "Vn45"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Roberta",
+        "cognome": "Ferrucci",
+        "CF": "jrol6t91ujyqzora",
+        "email": "lilla.ferrucci@poste.it",
+        "tel": "+39 305 25477954",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2003-10-14",
+          "luogoNascita": "Borgo Stefano",
+          "nazionalita": "Paraguay"
+        },
+        "residenza": {
+          "via": "Vicolo Gentileschi 069",
+          "cap": "28164",
+          "comune": "Emma terme",
+          "provincia": "Vercelli",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Itaque quidem tempore maiores.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "MC86"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Pierpaolo",
+        "cognome": "Cundari",
+        "CF": "yu1kyhtm98hul87v",
+        "email": "pierpaolo.cundari@tele2.it",
+        "tel": "+39 2166 70521693",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2002-11-06",
+          "luogoNascita": "Ceci terme",
+          "nazionalita": "Paraguay"
+        },
+        "residenza": {
+          "via": "Via Ludovica 41",
+          "cap": "44158",
+          "comune": "San Annibale laziale",
+          "provincia": "Alessandria",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Distinctio totam temporibus.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Yz09"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Cecilia",
+        "cognome": "Zaguri",
+        "CF": "66l0a3u8nwl2v9af",
+        "email": "cecilia.zaguri@vodafone.it",
+        "tel": "+39 4228 2150525",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2001-10-27",
+          "luogoNascita": "Pirandello umbro",
+          "nazionalita": "Azerbaijan"
+        },
+        "residenza": {
+          "via": "Stretto Zaira 392 Appartamento 97",
+          "cap": "44360",
+          "comune": "Settimo Matilda lido",
+          "provincia": "Alessandria",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Quibusdam assumenda dignissimos iste placeat iusto minima aspernatur.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Xz76"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Olga",
+        "cognome": "Solari",
+        "CF": "maz6xxjwc7k3tcxu",
+        "email": "olga.solari@hotmail.it",
+        "tel": "+39 57 69597853",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2001-05-30",
+          "luogoNascita": "Travaglio lido",
+          "nazionalita": "Uzbekistan"
+        },
+        "residenza": {
+          "via": "Canale Pasqual 5",
+          "cap": "12206",
+          "comune": "San Venancio salentino",
+          "provincia": "Pisa",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Alias fugit voluptate exercitationem maiores dolorum aspernatur.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "BX15"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Rosina",
+        "cognome": "Gori",
+        "CF": "pla23kjslmzpfas2",
+        "email": "rosina.gori@hotmail.it",
+        "tel": "+39 6497 30799297",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2008-06-18",
+          "luogoNascita": "Settimo Tonino lido",
+          "nazionalita": "Armenia"
+        },
+        "residenza": {
+          "via": "Rotonda Filippo 47 Piano 6",
+          "cap": "37520",
+          "comune": "Trobbiani terme",
+          "provincia": "Carbonia-Iglesias",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Neque voluptatem necessitatibus sint occaecati maiores.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "xy63"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Giuliana",
+        "cognome": "Giunti",
+        "CF": "qb6w216n9fhmza0u",
+        "email": "giuliana.giunti@virgilio.it",
+        "tel": "+39 95 9318734",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2004-01-18",
+          "luogoNascita": "Gioacchino umbro",
+          "nazionalita": "Nepal"
+        },
+        "residenza": {
+          "via": "Borgo Moresi 2 Piano 3",
+          "cap": "48289",
+          "comune": "Quarto Sante del friuli",
+          "provincia": "Savona",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Earum dicta sapiente et accusantium deleniti.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "kJ39"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Marina",
+        "cognome": "Bottigliero",
+        "CF": "87cq0qs3z8f77w7j",
+        "email": "marina.bottigliero@fastwebnet.it",
+        "tel": "+39 591 93001419",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2002-01-28",
+          "luogoNascita": "Gloria nell'emilia",
+          "nazionalita": "Giappone"
+        },
+        "residenza": {
+          "via": "Piazza Carosone 524 Piano 4",
+          "cap": "75311",
+          "comune": "Settimo Alderano terme",
+          "provincia": "Pordenone",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Quae quo nemo unde nostrum vero.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "sk34"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Eliana",
+        "cognome": "Gelli",
+        "CF": "lr1hopwyz3umuuk3",
+        "email": "eliana.gelli@tin.it",
+        "tel": "+39 9302 39062278",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2001-01-06",
+          "luogoNascita": "Borgo Giuliano",
+          "nazionalita": "Macedonia"
+        },
+        "residenza": {
+          "via": "Vicolo Greco 126 Appartamento 39",
+          "cap": "58724",
+          "comune": "Settimo Serena sardo",
+          "provincia": "Foggia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Magnam veniam pariatur.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "QC75"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Fernanda",
+        "cognome": "Leone",
+        "CF": "sbumagdtb748l691",
+        "email": "fernanda.leone@virgilio.it",
+        "tel": "+39 21 4756805",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2010-04-30",
+          "luogoNascita": "Sesto Severino salentino",
+          "nazionalita": "Guyana"
+        },
+        "residenza": {
+          "via": "Contrada Amanda 12 Piano 1",
+          "cap": "82726",
+          "comune": "Virginia sardo",
+          "provincia": "Perugia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Quasi fugit commodi quae molestiae corrupti.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "NC04"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Nadia",
+        "cognome": "Praga",
+        "CF": "ff5sf66zz00s3yzn",
+        "email": "nadia.praga@virgilio.it",
+        "tel": "+39 383 37131829",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2007-07-10",
+          "luogoNascita": "Fiorucci veneto",
+          "nazionalita": "Benin"
+        },
+        "residenza": {
+          "via": "Strada Toldo 7",
+          "cap": "03331",
+          "comune": "Pisano lido",
+          "provincia": "Verona",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Mollitia maxime numquam nobis sint.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "OO47"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Romina",
+        "cognome": "Badoer",
+        "CF": "vcu3hjzjj79f6tbv",
+        "email": "romina.badoer@gmail.com",
+        "tel": "+39 541 9175991",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2008-12-21",
+          "luogoNascita": "Marissa del friuli",
+          "nazionalita": "Rwanda"
+        },
+        "residenza": {
+          "via": "Viale Giampiero 3",
+          "cap": "23771",
+          "comune": "Romana terme",
+          "provincia": "Frosinone",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Similique illum sunt sequi laborum.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Ox28"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Ennio",
+        "cognome": "Carriera",
+        "CF": "13cxqiqfmxrut3m3",
+        "email": "ennio.carriera@hotmail.com",
+        "tel": "+39 397 52929643",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2010-01-17",
+          "luogoNascita": "Lucio terme",
+          "nazionalita": "Saint Pierre and Miquelon"
+        },
+        "residenza": {
+          "via": "Borgo Filogamo 86",
+          "cap": "60271",
+          "comune": "Elisa terme",
+          "provincia": "Caltanissetta",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Velit consequuntur totam modi.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "tW20"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Ruggiero",
+        "cognome": "Bresciani",
+        "CF": "vumnn4we7gemvbxz",
+        "email": "ruggiero.bresciani@gmail.com",
+        "tel": "+39 9827 3032922",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2004-10-17",
+          "luogoNascita": "San Simone del friuli",
+          "nazionalita": "Isole Marshall"
+        },
+        "residenza": {
+          "via": "Canale Ninetta 1",
+          "cap": "49486",
+          "comune": "Borgo Elena",
+          "provincia": "Bolzano",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Nulla architecto eius earum iusto quod neque voluptatibus.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Cd12"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Mattia",
+        "cognome": "Monte",
+        "CF": "1zm4cbm61yu2ob2g",
+        "email": "mattia.monte@fastwebnet.it",
+        "tel": "+39 259 86341743",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2006-09-25",
+          "luogoNascita": "Pennetta a mare",
+          "nazionalita": "Gabon"
+        },
+        "residenza": {
+          "via": "Strada Carla 2",
+          "cap": "83750",
+          "comune": "Pierpaolo laziale",
+          "provincia": "Parma",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Temporibus esse facilis ipsum harum.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "OX70"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Ivan",
+        "cognome": "Tonisto",
+        "CF": "daaoy6l20zr4to27",
+        "email": "ivan.tonisto@tele2.it",
+        "tel": "+39 354 10 64 5935",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2004-01-04",
+          "luogoNascita": "Scialpi laziale",
+          "nazionalita": "Togo"
+        },
+        "residenza": {
+          "via": "Piazza Goffredo 643",
+          "cap": "74862",
+          "comune": "Inzaghi ligure",
+          "provincia": "Savona",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Quod consectetur odit dolorum quis totam.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Rw72"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Pompeo",
+        "cognome": "Roero",
+        "CF": "3m8qb6wkbnftfg7x",
+        "email": "pompeo.roero@gmail.com",
+        "tel": "+39 850 20 15 5733",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2009-05-19",
+          "luogoNascita": "Bettina lido",
+          "nazionalita": "Benin"
+        },
+        "residenza": {
+          "via": "Strada Alberto 6 Piano 3",
+          "cap": "16049",
+          "comune": "Sesto Gustavo",
+          "provincia": "Pavia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Sunt nemo ea cupiditate ipsum accusamus.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "vU01"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Eugenia",
+        "cognome": "Mazzanti",
+        "CF": "a8woiwl8mfpnun1f",
+        "email": "eugenia.mazzanti@hotmail.it",
+        "tel": "+39 908 6011416",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2010-08-09",
+          "luogoNascita": "Settimo Melania salentino",
+          "nazionalita": "Regno Unito"
+        },
+        "residenza": {
+          "via": "Stretto Dina 03",
+          "cap": "27227",
+          "comune": "Renata sardo",
+          "provincia": "Carbonia-Iglesias",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Ducimus fugit iure nisi nam.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "BO52"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Agnolo",
+        "cognome": "Pulci",
+        "CF": "o29a3sb1ew2ynap6",
+        "email": "agnolo.pulci@tele2.it",
+        "tel": "+39 4301 7823695",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2007-09-14",
+          "luogoNascita": "Sesto Mattia",
+          "nazionalita": "Mali"
+        },
+        "residenza": {
+          "via": "Canale Schicchi 4 Piano 4",
+          "cap": "23750",
+          "comune": "Salvatore laziale",
+          "provincia": "Trieste",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Consequatur laudantium tempora recusandae soluta facilis deserunt.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Fi31"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Calogero",
+        "cognome": "Travaglio",
+        "CF": "estcox8ppqioxou4",
+        "email": "calogero.travaglio@hotmail.it",
+        "tel": "+39 634 7680647",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2010-05-06",
+          "luogoNascita": "Liguori del friuli",
+          "nazionalita": "Belgio"
+        },
+        "residenza": {
+          "via": "Stretto Sandro 5 Appartamento 39",
+          "cap": "67841",
+          "comune": "San Mattia veneto",
+          "provincia": "Rimini",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Id repudiandae ullam hic.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "tE99"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Paloma",
+        "cognome": "Padovano",
+        "CF": "awribl28d5bzap5o",
+        "email": "paloma.padovano@vodafone.it",
+        "tel": "+39 2086 6246748",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2006-01-30",
+          "luogoNascita": "Donati calabro",
+          "nazionalita": "Argentina"
+        },
+        "residenza": {
+          "via": "Viale Mastroianni 353 Piano 0",
+          "cap": "22711",
+          "comune": "Settimo Amedeo",
+          "provincia": "Crotone",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Cum culpa tempore.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Us17"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Zaira",
+        "cognome": "Marino",
+        "CF": "qgrf751enfmrsb5j",
+        "email": "zaira.marino@vodafone.it",
+        "tel": "+39 009 02 92 7192",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2006-10-10",
+          "luogoNascita": "Balbo laziale",
+          "nazionalita": "Siria"
+        },
+        "residenza": {
+          "via": "Viale Boito 437 Piano 8",
+          "cap": "61600",
+          "comune": "Sesto Adriano salentino",
+          "provincia": "Gorizia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Veniam natus recusandae.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "MX11"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Stefania",
+        "cognome": "Carriera",
+        "CF": "nbtbonhedmbuqxzc",
+        "email": "stefania.carriera@virgilio.it",
+        "tel": "+39 89 86439129",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2003-04-27",
+          "luogoNascita": "Quarto Raffaele lido",
+          "nazionalita": "Brasile"
+        },
+        "residenza": {
+          "via": "Stretto Dibiasi 1 Appartamento 56",
+          "cap": "18083",
+          "comune": "Quarto Virginia calabro",
+          "provincia": "Pavia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Sed vitae quasi velit magnam accusantium.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "qV02"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Giacobbe",
+        "cognome": "Ciani",
+        "CF": "ffber6wk2y2641jf",
+        "email": "giacobbe.ciani@alice.it",
+        "tel": "+39 356 14685053",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2001-11-24",
+          "luogoNascita": "Quarto Lolita nell'emilia",
+          "nazionalita": "Filippine"
+        },
+        "residenza": {
+          "via": "Contrada Cignaroli 255",
+          "cap": "18724",
+          "comune": "Franco terme",
+          "provincia": "Bologna",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Alias quidem modi quod culpa ea.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "vP41"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Luciana",
+        "cognome": "Alfieri",
+        "CF": "z690k59m8s893yfa",
+        "email": "luciana.alfieri@fastwebnet.it",
+        "tel": "+39 398 3083787",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2005-12-23",
+          "luogoNascita": "Borgo Giosuè",
+          "nazionalita": "Honduras"
+        },
+        "residenza": {
+          "via": "Viale Galasso 9",
+          "cap": "64040",
+          "comune": "Settimo Ermes calabro",
+          "provincia": "Caserta",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Nulla ex reprehenderit facilis quo accusantium facilis laboriosam.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "WM36"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Alberto",
+        "cognome": "Farinelli",
+        "CF": "2zvvsj0gdben0lyn",
+        "email": "alberto.farinelli@tele2.it",
+        "tel": "+39 64 8658677",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2007-10-25",
+          "luogoNascita": "Ponti veneto",
+          "nazionalita": "Repubblica Centrale Africana"
+        },
+        "residenza": {
+          "via": "Incrocio Ruggieri 3",
+          "cap": "12904",
+          "comune": "San Eraldo",
+          "provincia": "Fermo",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Dolorum et dolorum eligendi.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "bF98"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Sole",
+        "cognome": "Tosi",
+        "CF": "r17u3c47g345svhz",
+        "email": "sole.tosi@hotmail.com",
+        "tel": "+39 7929 0953461",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2007-06-23",
+          "luogoNascita": "Quarto Guarino",
+          "nazionalita": "Samoa"
+        },
+        "residenza": {
+          "via": "Piazza Pierluigi 1 Piano 0",
+          "cap": "76858",
+          "comune": "Trevisan nell'emilia",
+          "provincia": "Piacenza",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Atque ratione iste consectetur ut.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Sj57"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Melina",
+        "cognome": "Grifeo",
+        "CF": "v7gpbn2xoi5bwjst",
+        "email": "melina.grifeo@live.com",
+        "tel": "+39 719 8027929",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2000-03-27",
+          "luogoNascita": "Jolanda umbro",
+          "nazionalita": "Saint Pierre and Miquelon"
+        },
+        "residenza": {
+          "via": "Rotonda Tullio 68",
+          "cap": "42822",
+          "comune": "Sesto Fulvio a mare",
+          "provincia": "Aosta",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Aspernatur explicabo consectetur iusto fuga.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "gN51"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Tatiana",
+        "cognome": "Capone",
+        "CF": "gtf43fcco8ujidf3",
+        "email": "tatiana.capone@vodafone.it",
+        "tel": "+39 63 4127554",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2002-12-22",
+          "luogoNascita": "Beatrice calabro",
+          "nazionalita": "Isola di Cocos (Keeling)"
+        },
+        "residenza": {
+          "via": "Incrocio Pirandello 3",
+          "cap": "64767",
+          "comune": "Columbo veneto",
+          "provincia": "Venezia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Exercitationem cum voluptate provident rem libero atque.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "CU99"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Luciano",
+        "cognome": "Draghi",
+        "CF": "xvhbozvzdrm25yir",
+        "email": "luciano.draghi@libero.it",
+        "tel": "+39 410 61677220",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2009-03-25",
+          "luogoNascita": "Ettore salentino",
+          "nazionalita": "Zambia"
+        },
+        "residenza": {
+          "via": "Strada Nicolò 54 Piano 0",
+          "cap": "42282",
+          "comune": "Giusti lido",
+          "provincia": "Sondrio",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Corrupti blanditiis illo tempora.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "KL41"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Bettina",
+        "cognome": "Gagliardi",
+        "CF": "am87dkp084fkh1x2",
+        "email": "bettina.gagliardi@vodafone.it",
+        "tel": "+39 4702 52733127",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2002-07-09",
+          "luogoNascita": "Doria umbro",
+          "nazionalita": "Republicca Kirgiza"
+        },
+        "residenza": {
+          "via": "Canale Druso 6 Piano 2",
+          "cap": "13857",
+          "comune": "Sesto Ugo veneto",
+          "provincia": "Varese",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Aut quibusdam commodi consequatur dolores molestias.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "LO75"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Maura",
+        "cognome": "Terragni",
+        "CF": "e2osqxn6pmo195rk",
+        "email": "maura.terragni@fastwebnet.it",
+        "tel": "+39 5357 28072018",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2006-11-13",
+          "luogoNascita": "Aldo laziale",
+          "nazionalita": "Qatar"
+        },
+        "residenza": {
+          "via": "Borgo Tartini 1",
+          "cap": "72107",
+          "comune": "Puccini calabro",
+          "provincia": "Ragusa",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Sequi quisquam autem.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Qm54"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Azeglio",
+        "cognome": "Bellucci",
+        "CF": "707miy9qq793holi",
+        "email": "azeglio.bellucci@tiscali.it",
+        "tel": "+39 75 86754847",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2003-11-10",
+          "luogoNascita": "Sesto Oreste",
+          "nazionalita": "Panama"
+        },
+        "residenza": {
+          "via": "Borgo Perini 0 Appartamento 90",
+          "cap": "06231",
+          "comune": "Sesto Luisa",
+          "provincia": "Foggia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Ex perferendis ut voluptatibus quidem ut accusamus.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "zB74"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Domenico",
+        "cognome": "Endrizzi",
+        "CF": "qo83pb1oj0ggzb8a",
+        "email": "domenico.endrizzi@live.com",
+        "tel": "+39 011 92293551",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2001-01-11",
+          "luogoNascita": "Borgo Eleanora",
+          "nazionalita": "Zimbabwe"
+        },
+        "residenza": {
+          "via": "Contrada Tiziano 2",
+          "cap": "71736",
+          "comune": "San Rosaria",
+          "provincia": "Asti",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Fugiat commodi nemo minima.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "WM93"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Renzo",
+        "cognome": "Ludovisi",
+        "CF": "ev7h0ha64cgi7n3p",
+        "email": "renzo.ludovisi@tim.it",
+        "tel": "+39 63 56915179",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2001-06-15",
+          "luogoNascita": "Quarto Rosa",
+          "nazionalita": "Bhutan"
+        },
+        "residenza": {
+          "via": "Via Gloria 45",
+          "cap": "75811",
+          "comune": "Amato a mare",
+          "provincia": "Catanzaro",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Error fugit quaerat exercitationem cumque at eius.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "YZ70"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Ermes",
+        "cognome": "Cipolla",
+        "CF": "8bmnmqesjddaf1eh",
+        "email": "ermes.cipolla@hotmail.it",
+        "tel": "+39 7095 26042921",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2006-11-27",
+          "luogoNascita": "Giulia sardo",
+          "nazionalita": "Repubblica del Laos"
+        },
+        "residenza": {
+          "via": "Contrada Scialpi 06",
+          "cap": "71245",
+          "comune": "Clelia ligure",
+          "provincia": "Olbia-Tempio",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Sint maiores iste repellendus modi quod.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "iS65"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Patrizia",
+        "cognome": "Olivetti",
+        "CF": "psuyrsqgtejcs35q",
+        "email": "patrizia.olivetti@yahoo.com",
+        "tel": "+39 476 37 08 9653",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2002-04-05",
+          "luogoNascita": "San Carmelo",
+          "nazionalita": "El Salvador"
+        },
+        "residenza": {
+          "via": "Viale Letizia 3",
+          "cap": "65459",
+          "comune": "Rembrandt umbro",
+          "provincia": "Torino",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Expedita reiciendis debitis quaerat dicta voluptas blanditiis.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "tZ62"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Francesca",
+        "cognome": "Detti",
+        "CF": "7a0ao1qpjrikxv78",
+        "email": "francesca.detti@gmail.com",
+        "tel": "+39 907 43807100",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2008-09-10",
+          "luogoNascita": "San Priscilla ligure",
+          "nazionalita": "Western Sahara"
+        },
+        "residenza": {
+          "via": "Strada Borsiere 9 Appartamento 81",
+          "cap": "57891",
+          "comune": "Borgo Marisa",
+          "provincia": "Ragusa",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Deleniti laudantium omnis maxime nemo voluptatibus assumenda fuga.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Nv80"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Lodovico",
+        "cognome": "Vergerio",
+        "CF": "ksy8fb521qyogo22",
+        "email": "lodovico.vergerio@tiscali.it",
+        "tel": "+39 297 81 00 1266",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2002-02-07",
+          "luogoNascita": "Alberico laziale",
+          "nazionalita": "Italia"
+        },
+        "residenza": {
+          "via": "Rotonda Hugo 14 Appartamento 50",
+          "cap": "96063",
+          "comune": "Scarpetta salentino",
+          "provincia": "Verbano-Cusio-Ossola",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Cupiditate dolore molestias adipisci aliquam illo eligendi sapiente.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "OA05"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Ugolino",
+        "cognome": "Filzi",
+        "CF": "lst4ufyrx7vbrvl0",
+        "email": "ugolino.filzi@hotmail.com",
+        "tel": "+39 55 42296406",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2008-02-13",
+          "luogoNascita": "Cassandra del friuli",
+          "nazionalita": "Portogallo"
+        },
+        "residenza": {
+          "via": "Viale Toscanini 0",
+          "cap": "57293",
+          "comune": "San Galasso",
+          "provincia": "Bolzano",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Quidem voluptate similique libero.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "AW63"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Osvaldo",
+        "cognome": "Cerquiglini",
+        "CF": "epyiy51px95myfum",
+        "email": "osvaldo.cerquiglini@hotmail.it",
+        "tel": "+39 8928 6405208",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2000-09-12",
+          "luogoNascita": "Orlando a mare",
+          "nazionalita": "Palau"
+        },
+        "residenza": {
+          "via": "Stretto Pasqual 39",
+          "cap": "81224",
+          "comune": "Sesto Damiano ligure",
+          "provincia": "Reggio Calabria",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Quaerat pariatur earum impedit vel.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Lr03"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Elvira",
+        "cognome": "Morellato",
+        "CF": "9l9chef78zhnbodo",
+        "email": "elvira.morellato@tim.it",
+        "tel": "+39 080 8614384",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2004-12-02",
+          "luogoNascita": "Silvestro calabro",
+          "nazionalita": "Tanzania"
+        },
+        "residenza": {
+          "via": "Contrada Ida 543 Piano 3",
+          "cap": "33618",
+          "comune": "Gabriella ligure",
+          "provincia": "L'Aquila",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Tempore autem voluptate perferendis.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "jZ52"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Cassandra",
+        "cognome": "Luna",
+        "CF": "ha9exrntc8rap1l0",
+        "email": "cassandra.luna@vodafone.it",
+        "tel": "+39 759 4724061",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2006-01-24",
+          "luogoNascita": "Quarto Vittoria",
+          "nazionalita": "Gabon"
+        },
+        "residenza": {
+          "via": "Strada Sandro 564",
+          "cap": "12758",
+          "comune": "San Marisa",
+          "provincia": "Monza e della Brianza",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Nisi architecto beatae hic eos autem velit.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "Ib94"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Armando",
+        "cognome": "Piovani",
+        "CF": "5sfjvk4hnsm3jdfw",
+        "email": "armando.piovani@gmail.com",
+        "tel": "+39 21 85931817",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2006-08-05",
+          "luogoNascita": "Gianluigi del friuli",
+          "nazionalita": "Repubblica Centrale Africana"
+        },
+        "residenza": {
+          "via": "Stretto Claudia 457",
+          "cap": "62992",
+          "comune": "Filippo terme",
+          "provincia": "Ancona",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Nostrum ullam laudantium ex nulla dignissimos odio.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "GT64"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Isa",
+        "cognome": "Galtarossa",
+        "CF": "8spn5ev7efbziwje",
+        "email": "isa.galtarossa@yahoo.com",
+        "tel": "+39 55 5630698",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2000-09-16",
+          "luogoNascita": "Giulio sardo",
+          "nazionalita": "Georgia del sud e South Sandwich Islands"
+        },
+        "residenza": {
+          "via": "Via Baroffio 1",
+          "cap": "45470",
+          "comune": "Livia calabro",
+          "provincia": "Rieti",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "Id nobis molestias sunt et.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "fi62"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Annalisa",
+        "cognome": "Viviani",
+        "CF": "2g3tmtfra5lm9wp2",
+        "email": "annalisa.viviani@vodafone.it",
+        "tel": "+39 90 1503374",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2006-11-28",
+          "luogoNascita": "Sesto Gioachino",
+          "nazionalita": "Montserrat"
+        },
+        "residenza": {
+          "via": "Canale Raffaele 40",
+          "cap": "74632",
+          "comune": "Amaldi ligure",
+          "provincia": "Agrigento",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Natus fugiat omnis et omnis.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "GX79"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Annalisa",
+        "cognome": "Gori",
+        "CF": "dc9eb4id4hgxihzp",
+        "email": "annalisa.gori@tin.it",
+        "tel": "+39 94 8469807",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2006-05-25",
+          "luogoNascita": "Borgo Cirillo",
+          "nazionalita": "Burundi"
+        },
+        "residenza": {
+          "via": "Vicolo Annalisa 996",
+          "cap": "76098",
+          "comune": "Irma umbro",
+          "provincia": "Como",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Sviluppatore Java",
+      "note": "Necessitatibus unde eaque optio qui reprehenderit nemo.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "rC48"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Maria",
+        "cognome": "Camiscione",
+        "CF": "9m94h39jx1c3lz8b",
+        "email": "maria.camiscione@yahoo.com",
+        "tel": "+39 8443 69774509",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2008-01-31",
+          "luogoNascita": "Luigi sardo",
+          "nazionalita": "Bielorussia"
+        },
+        "residenza": {
+          "via": "Piazza Canova 5 Appartamento 83",
+          "cap": "00471",
+          "comune": "Quarto Lucia del friuli",
+          "provincia": "Foggia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Velit quo autem possimus corrupti itaque repellendus eius.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "JD32"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Rosario",
+        "cognome": "Guidone",
+        "CF": "2fjht5ds3evqlkwy",
+        "email": "rosario.guidone@live.com",
+        "tel": "+39 515 07925944",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2003-04-12",
+          "luogoNascita": "San Giuseppina ligure",
+          "nazionalita": "Principato di Monaco"
+        },
+        "residenza": {
+          "via": "Rotonda Montanelli 06",
+          "cap": "24708",
+          "comune": "Lucio salentino",
+          "provincia": "Trapani",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Gelatiere",
+      "note": "A culpa expedita doloremque soluta aliquid ipsum.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "cu69"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Alfredo",
+        "cognome": "Anastasi",
+        "CF": "4wj5xlt9bz4yfv2p",
+        "email": "alfredo.anastasi@outlook.com",
+        "tel": "+39 08 3780650",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2000-04-03",
+          "luogoNascita": "Giacomo sardo",
+          "nazionalita": "Isola di Pasqua"
+        },
+        "residenza": {
+          "via": "Incrocio Annamaria 412 Appartamento 04",
+          "cap": "89415",
+          "comune": "Morgagni salentino",
+          "provincia": "Isernia",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Pizzaiolo",
+      "note": "Voluptas dicta qui natus adipisci quasi voluptas.",
+      "timestamp": {
+        "dataAggiunta": "14/07/2025",
+        "orarioAggiunta": "14:45",
+        "timestampLocale": "14-07-2025_14-45"
+      },
+      "id": "KF23"
     }
   ]
 }
