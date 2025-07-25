@@ -107,10 +107,10 @@ header.site-header nav {
   margin: 12px auto;
   width: 95vw !important;
   max-width: 95vw !important;
-  position: fixed;
+  /* position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  top: 24px;
+  top: 24px; */
 }
 header.site-header nav.container .row {
   align-items: center;
@@ -142,9 +142,36 @@ header.site-header nav.container .row .col-md-4 .nav-menu .menu-item a {
   line-height: 1;
   text-decoration: unset;
   font-size: 14px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+header.site-header nav.container .row .col-md-4 .nav-menu .menu-item.active a{
+  background-color: #ccc;
 }
 header.site-header nav.container .row .col-md-4 .nav-menu.nav-menu-right {
   justify-content: flex-end;
+}
+header.site-header nav.container .row.row-bottom .tp-button-menu{
+  display: none;
+}
+header.site-header nav.container .row.row-bottom .tp-button-menu.active{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 16px 0 8px;
+}
+
+header.site-header nav.container .row.row-bottom .tp-button-menu button.btn a{
+  text-decoration: unset;
+}
+
+header.site-header nav.container .row.row-bottom .tp-button-menu button.btn.disabled{
+  opacity: 0.2;
+}
+
+header.site-header nav.container .row.row-bottom .tp-button-menu button.btn.btn-outline-dark:hover a{
+  color: white;
 }
 
 /* ==========================================================================
@@ -167,7 +194,9 @@ footer.site-footer {
   7.0 - main
    ========================================================================== */
 main.site-main {
-  padding-top: 140px;
+  /* SE FIXED */
+  /* padding-top: 140px; */
+  padding-top: 44px;
 }
 main.site-main .container .row .col-md-10 form input,
 main.site-main .container .row .col-md-10 form select,

@@ -7,6 +7,10 @@
     {
       "username": "valerio@esempio.it",
       "password": "abcd"
+    },
+    {
+      "username": "admin",
+      "password": "qwer"
     }
   ]
 }
